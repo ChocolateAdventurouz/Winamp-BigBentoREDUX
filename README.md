@@ -6,3 +6,4 @@ This skin works great on WACUP with the latest preview update. I am aiming to up
 ## Compiling the scripts (maki)
 
 Compile the scripts using the following command ``.\mc.exe <script name>``
+<br>![img](screenshot.png)
