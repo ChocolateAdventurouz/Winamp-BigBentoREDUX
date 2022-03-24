@@ -38,13 +38,13 @@
 	/>
 
 	<SongTicker id="Songticker" 
-		x="70" y="6" h="20" w="-72" relatw="1"
-		showlen="1" rightpadding="-3"
+		x="100" y="6" h="20" w="-43" relatw="1"
+		showlen="1" rightpadding="0"
 		rightclickaction="trackmenu" dblclickaction="trackinfo" align="right"
-		color="color.display" size="13" valign="top" antialias="0" 
+		color="color.display" size="11" valign="top" antialias="0" 
 	/>
 	<Text id="InfoDisplay" 
-		x="70" y="6" h="20" w="-72" relatw="1" alpha="0"
+		x="83" y="6" h="20" w="20" relatw="1" alpha="0"
 		display="SONGTITLE" showlen="1" offsetx="-3" align="right"
 		color="color.display" size="13" valign="top" antialias="0" ghost="1"
 	/>
