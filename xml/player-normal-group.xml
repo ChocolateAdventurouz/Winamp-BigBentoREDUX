@@ -32,19 +32,19 @@
 	/>
 
 	<text id="SongTime"
-		x="7" y="8" h="31" w="102"
+		x="2" y="8" h="31" w="102"
 		font="player.bitmapfont.nums" timecolonwidth="6"
 		display="time" align="left" alpha="220"
 	/>
 
 	<SongTicker id="Songticker" 
-		x="100" y="6" h="20" w="-43" relatw="1"
-		showlen="1" rightpadding="0"
+		x="60" y="6" h="13" w="-62" relatw="1"
+		showlen="1" rightpadding="-3"
 		rightclickaction="trackmenu" dblclickaction="trackinfo" align="right"
-		color="color.display" size="11" valign="top" antialias="0" 
+		color="color.display" size="13" valign="top" antialias="0" 
 	/>
 	<Text id="InfoDisplay" 
-		x="83" y="6" h="20" w="20" relatw="1" alpha="0"
+		x="70" y="6" h="20" w="-72" relatw="1" alpha="0"
 		display="SONGTITLE" showlen="1" offsetx="-3" align="right"
 		color="color.display" size="13" valign="top" antialias="0" ghost="1"
 	/>
