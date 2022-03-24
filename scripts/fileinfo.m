@@ -21,6 +21,7 @@ Internet:	www.skinconsortium.com
 #include <lib/com/debug.m>
 
 #define WEBCOVER_SHOUTCAST "winamp.cover.shoutcast"
+#define WEBCOVER_AOLRADIO "winamp.cover.aolradio"
 
 Function loadFileInfo();
 Function loadPlaylistArtWork();
@@ -463,6 +464,11 @@ loadFileInfo ()
 			}
 		}
 
+		if (songinfo_streamType == SONGINFO_STREAMTYPE_AOLRADIO || songinfo_streamType == SONGINFO_STREAMTYPE_CBSRADIO)  //AOL Radio / CBS
+		{
+			l_albumart.hide();
+			l_webcover.setXMLParam("image", WEBCOVER_AOLRADIO);
+			l_webcover.show();
 		}
 		else if(songinfo_streamType == SONGINFO_STREAMTYPE_SHOUTCAST || songinfo_streamType == SONGINFO_STREAMTYPE_SHOUTCAST2)
 		{
@@ -1168,7 +1174,7 @@ t_rating.onTextChanged (String newtxt)
 }
 
 //----------------------------------------------------------------------------------------------------------------
-// Winamp/AOL Branding - Note: Removed (21/3/2022) by Rel@m
+// Winamp/AOL Branding
 //----------------------------------------------------------------------------------------------------------------
 
 showBranding()
