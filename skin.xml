@@ -38,6 +38,7 @@
 
 	<scripts>
 		<script file="scripts/maximize.maki" param="166,23"/>
+		<script file="scripts/newtimer.maki"/>
 	</scripts>
 
 </WinampAbstractionLayer>
