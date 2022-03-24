@@ -5,5 +5,5 @@ This skin works great on WACUP with the latest preview update. I am aiming to up
 
 ## Compiling the scripts (maki)
 
-Compile the scripts using the following command ``.\mc.exe <script name>``
+Compile the scripts using the following command ``.\mc.exe <script name>`` It's recommended to compile them with Vichtor's Winamp Compiler: https://drive.google.com/file/d/1rejKyZkHaDyFJh-iARvx_QIFQkzMbqO8/view
 <br>![img](screenshot.png)
