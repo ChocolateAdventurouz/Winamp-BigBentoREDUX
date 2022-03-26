@@ -33,7 +33,6 @@ Note:		This script is based on drawer.m
 #include attribs/init_Autoresize.m
 #include attribs/init_vis.m
 #include attribs/init_appearance.m
-#include attribs/init_art.m
 
 // #define DEBUG
 #define FILE_NAME "suicore.m"
