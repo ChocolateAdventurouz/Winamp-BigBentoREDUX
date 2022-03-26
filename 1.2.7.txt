@@ -1,0 +1,5 @@
+- Added the "Big Bento Cover Art Window" modification (Version: 1.0.1)
+- Updated the notifier, for avoiding the black pixels (http://forums.winamp.com/showthread.php?p=2982878#post2982878)
+- New Timer (thanks @0x5066)
+- Fixed an analyser glitch
+- New Branding logo (useless)
