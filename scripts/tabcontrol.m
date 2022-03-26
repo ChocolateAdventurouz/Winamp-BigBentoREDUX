@@ -22,10 +22,10 @@ Class Text WatchText;
 
 Global Boolean HAVE_ML, HAVE_VIDEO = TRUE;
 
-Global GuiObject tabMl, tabVideo, tabVis, tabBrowser, tabPl;
-Global WatchText txtMl, txtVideo, txtVis, txtBrowser, txtPL;
+Global GuiObject tabMl, tabVideo, tabVis, tabBrowser, tabPl, tabArt;
+Global WatchText txtMl, txtVideo, txtVis, txtBrowser, txtPL, txtArt;
 Global int startX, curX;
-Global Button btnMl, btnPl;
+Global Button btnMl, btnPl, btnArt;
 
 System.onScriptLoaded ()
 {
@@ -38,15 +38,23 @@ System.onScriptLoaded ()
 	tabML = sg.findObject("switch.ml");
 	btnMl = sg.findObject("switch.ml");
 	txtMl = tabMl.findObject("bento.tabbutton.normal.text");
+
 	tabPL = sg.findObject("switch.pl");
 	btnPl = sg.findObject("switch.pl");
 	txtPl = tabPl.findObject("bento.tabbutton.normal.text");
+
 	tabVis = sg.findObject("switch.vis");
 	txtVis = tabMl.findObject("bento.tabbutton.normal.text");
+
 	tabVideo = sg.findObject("switch.video");
 	txtVideo = tabMl.findObject("bento.tabbutton.normal.text");
+
 	tabBrowser = sg.findObject("switch.browser");
 	txtBrowser = tabMl.findObject("bento.tabbutton.normal.text");
+
+	tabArt = sg.findobject("switch.art");
+	txtArt = tabArt.findObject("bento.tabbutton.normal.text");
+
 
 	startX = tabMl.getGuiX();
 
@@ -85,12 +93,14 @@ updateTabPos ()
 	{
 		tabVideo.hide();
 	}
-
 	tabVis.setXmlParam("x", integerToString(curX));
 	curX += setAutoWidth(tabVis) + 1;
 
 	tabBrowser.setXmlParam("x", integerToString(curX));
 	curX += setAutoWidth(tabBrowser) + 1;
+
+	tabArt.setXmlParam("x", integerToString(curX));
+	curX += setAutoWidth(tabArt) + 1;
 }
 
 int setAutoWidth (guiObject tab)

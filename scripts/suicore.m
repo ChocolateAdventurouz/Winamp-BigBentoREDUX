@@ -33,6 +33,7 @@ Note:		This script is based on drawer.m
 #include attribs/init_Autoresize.m
 #include attribs/init_vis.m
 #include attribs/init_appearance.m
+#include attribs/init_art.m
 
 // #define DEBUG
 #define FILE_NAME "suicore.m"
@@ -42,12 +43,14 @@ Note:		This script is based on drawer.m
 #define VIS_GUID "{0000000A-000C-0010-FF7B-01014263450C}"
 #define VIDEO_GUID "{F0816D7B-FFFC-4343-80F2-E8199AA15CC3}"
 #define PL_GUID "{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D}"
+#define ART_GUID "{E9C2D926-53CA-400f-9A4D-85E31755A4CF}"
 
 Function switchToMl();
 Function switchToPl();
 Function switchToVideo();
 Function switchToVis();
 Function switchToBrw();
+Function switchToArt();
 //--Function switchToExp();
 //--Function switchToCfg();
 Function switchToNoComp();
@@ -68,6 +71,9 @@ Function showBrw();
 //--Function hideCfg();
 //--Function showCfg();
 
+Function hideArt();
+Function showArt();
+
 Function onShowMl();
 Function onHideMl();
 Function onShowPl();
@@ -76,6 +82,8 @@ Function onShowVis();
 Function onHideVis();
 Function onShowVideo();
 Function onHideVideo();
+Function onShowArt();
+Function onHideArt();
 //--Function onShowExp();
 //--Function onHideExp();
 Function onShowBrw();
@@ -94,6 +102,8 @@ Function dc_showVis();
 Function dc_showVideo();
 Function dc_hideVis();
 Function dc_hideVideo();
+Function dc_hideArt();
+Function dc_showArt();
 //--Function dc_showExp();
 //--Function dc_hideExp();
 Function dc_showBrw();
@@ -106,15 +116,15 @@ Function dc_closeSUI();
 
 Global GuiObject sui_window;
 Global Group sui_components;
-Global Group sui_vis, sui_video, sui_ml, sui_pl, sui_brw/*--, sui_exp, sui_cfg--*/;
+Global Group sui_vis, sui_video, sui_ml, sui_pl, sui_brw, sui_art /*--, sui_exp, sui_cfg--*/;
 Global WindowHolder sui_vis_wdh;
-Global Button switch_ml, switch_pl, switch_video, switch_vis, /*--switch_exp,--*/ switch_brw /*--switch_cfg--*/;
+Global Button switch_ml, switch_pl, switch_video, switch_vis, /*--switch_exp,--*/ switch_brw /*--switch_cfg--*/, switch_art;
 Global Button hide_sui, show_sui;
 Global Boolean bypasscancel;
-Global Boolean showing_vis, hiding_vis, showing_video, hiding_video, showing_ml, hiding_ml, showing_pl, hiding_pl;
+Global Boolean showing_vis, hiding_vis, showing_video, hiding_video, showing_ml, hiding_ml, showing_pl, hiding_pl, showing_art, hiding_art;
 Global Boolean /*--showing_exp, hiding_exp,--*/ showing_brw, hiding_brw/*--, showing_cfg, hiding_cfg--*/;
 
-Global Boolean callback_showing_vis, callback_hiding_vis, callback_showing_video, callback_hiding_video, callback_showing_ml, callback_hiding_ml, callback_showing_pl, callback_hiding_pl;
+Global Boolean callback_showing_vis, callback_hiding_vis, callback_showing_video, callback_hiding_video, callback_showing_ml, callback_hiding_ml, callback_showing_pl, callback_hiding_pl, callback_showing_art, callback_hiding_art;
 Global Boolean /*--callback_showing_exp, callback_hiding_exp,--*/ callback_showing_brw, callback_hiding_brw/*--, callback_showing_cfg, callback_hiding_cfg--*/;
 Global Boolean callback_closing_sui, callback_showing_sui;
 Global Layout normal;
@@ -176,6 +186,12 @@ switch_brw.onLeftClick ()
 	debugString("switch_brw.Clicked()", D_WTF);
 	switchToBrw();
 }
+
+switch_art.onLeftClick ()
+{
+	debugString("switch_brw.Clicked()", D_WTF);
+	switchToArt();
+}
 /*--
 switch_exp.onLeftClick ()
 {
@@ -211,12 +227,14 @@ onShowMl()
 	switch_vis.setActivated(0);
 	switch_video.setActivated(0);
 	switch_brw.setActivated(0);
+	switch_art.setActivated(0);
 	//--switch_exp.setActivated(0);
 	switch_ml.setXmlParam("ghost", "1");
 	switch_pl.setXmlParam("ghost", "0");
 	switch_video.setXmlParam("ghost", "0");
 	switch_vis.setXmlParam("ghost", "0");
 	switch_brw.setXmlParam("ghost", "0");
+	switch_art.setXmlParam("ghost", "0");
 	//--switch_Cfg.setActivated(0);
 }
 onHideMl() {
@@ -230,12 +248,14 @@ onShowPl()
 	switch_vis.setActivated(0);
 	switch_video.setActivated(0);
 	switch_brw.setActivated(0);
+	switch_art.setActivated(0);
 	//--switch_exp.setActivated(0);
 	switch_ml.setXmlParam("ghost", "0");
 	switch_pl.setXmlParam("ghost", "1");
 	switch_video.setXmlParam("ghost", "0");
 	switch_vis.setXmlParam("ghost", "0");
 	switch_brw.setXmlParam("ghost", "0");
+	switch_art.setXmlParam("ghost", "0");
 	//--switch_Cfg.setActivated(0);
 }
 onHidePl() {
@@ -249,12 +269,14 @@ onShowVis()
 	switch_vis.setActivated(1);
 	switch_video.setActivated(0);
 	switch_brw.setActivated(0);
+	switch_art.setActivated(0);
 	//--switch_exp.setActivated(0);
 	switch_vis.setXmlParam("ghost", "1");
 	switch_video.setXmlParam("ghost", "0");
 	switch_ml.setXmlParam("ghost", "0");
 	switch_pl.setXmlParam("ghost", "0");
 	switch_brw.setXmlParam("ghost", "0");
+	switch_art.setXmlParam("ghost", "0");
 	//hideNamedWindow(ML_GUID);
 	//--switch_Cfg.setActivated(0);
 }
@@ -270,12 +292,15 @@ onShowVideo()
 	switch_vis.setActivated(0);
 	switch_video.setActivated(1);
 	switch_brw.setActivated(0);
+	switch_art.setActivated(0);
 	//--switch_exp.setActivated(0);
 	switch_video.setXmlParam("ghost", "1");
 	switch_vis.setXmlParam("ghost", "0");
 	switch_ml.setXmlParam("ghost", "0");
 	switch_pl.setXmlParam("ghost", "0");
 	switch_brw.setXmlParam("ghost", "0");
+	switch_art.setXmlParam("ghost", "0");
+	
 	//hideNamedWindow(ML_GUID);
 	//--switch_Cfg.setActivated(0);
 }
@@ -290,18 +315,45 @@ onShowBrw()
 	switch_vis.setActivated(0);
 	switch_video.setActivated(0);
 	switch_brw.setActivated(1);
+	switch_art.setActivated(0);
 	//--switch_exp.setActivated(0);
 	switch_brw.setXmlParam("ghost", "1");
 	switch_vis.setXmlParam("ghost", "0");
 	switch_ml.setXmlParam("ghost", "0");
 	switch_pl.setXmlParam("ghost", "0");
 	switch_video.setXmlParam("ghost", "0");
+	switch_art.setXmlParam("ghost", "0");
 	//hideNamedWindow(ML_GUID);
 	//--switch_Cfg.setActivated(0);
 }
 onHideBrw() {
 	//switch_brw.setXmlParam("ghost", "0");
 }
+
+onShowArt()
+{
+	switch_ml.setActivated(0);
+	switch_pl.setActivated(0);
+	switch_vis.setActivated(0);
+	switch_video.setActivated(0);
+	switch_brw.setActivated(0);
+	switch_art.setActivated(1);
+	//--switch_exp.setActivated(0);
+	switch_art.setXmlParam("ghost", "1");
+	switch_brw.setXmlParam("ghost", "0");
+	switch_vis.setXmlParam("ghost", "0");
+	switch_ml.setXmlParam("ghost", "0");
+	switch_pl.setXmlParam("ghost", "0");
+	switch_video.setXmlParam("ghost", "0");
+	normal.sendAction("load_comp", "Art", 0,0,0,0);
+	//hideNamedWindow(ML_GUID);
+	//--switch_Cfg.setActivated(0);
+}
+onHideArt() {
+	//switch_art.setXmlParam("ghost", "0");
+}
+
+
 /*-
 onShowExp()
 {
@@ -390,6 +442,10 @@ sui_video.onSetVisible (Boolean onoff)
 sui_brw.onSetVisible (Boolean onoff)
 {
 	debugString(DEBUG_PREFIX "sui_brw.setVisible(" +integerToString(onoff)+ ");", D_WTF);
+}
+sui_art.onSetVisible (Boolean onoff)
+{
+	debugString(DEBUG_PREFIX "sui_art.setVisible(" +integerToString(onoff)+ ");", D_WTF);
 }/*-
 sui_exp.onSetVisible (Boolean onoff)
 {
