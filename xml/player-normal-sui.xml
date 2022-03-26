@@ -1,3 +1,5 @@
+<include file="player-normal-mcv.xml"/>
+
 <!-- SUI:Component:Browser -->
 
 <groupdef id="wdh.browser">
@@ -5,6 +7,7 @@
 	<Winamp:Browser x="0" y="1" h="-1" w="0" relatw="1" relath="1" id="sui.component.browser" download="0"/>
 
 </groupdef>
+
 
 <!-- SUI:Component:MediaLibrary -->
 <!--
@@ -237,14 +240,20 @@
 
 </groupdef>
 
+<groupdef id="wdh.art">
+	<AlbumArt id="winamp.albumart" fitparent="1" move="0" rectrgn="1" notfoundImage="winamp.cover.notfound.xxl"/>
+	<layer id="winamp.webalbumart" fitparent="1" move="0" image="winamp.cover.shoutcast" visible="0"/>
+	<script file="scripts/albumart.maki" param="winamp.albumart"/>
+</groupdef>
+
 <groupdef id="sui.components">
 
-	<group id="wdh.ml" fitparent="1" visible="0" />
+	<group id="wdh.ml" fitparent="1" visible="1" />
 	<group id="wdh.pl" fitparent="1" visible="0" />
 	<group id="wdh.vis" fitparent="1" visible="0" />
 	<group id="wdh.video" fitparent="1" visible="0" />
 	<group id="wdh.browser" fitparent="1" visible="0" />
-
+	<group id="wdh.art" fitparent="1" visible="0"/>
 </groupdef>
 
 <!-- 
@@ -295,7 +304,7 @@ the object itself is a button.
 
 </groupdef>
 
-<groupdef id="sui.content" >
+<groupdef id="sui.content">
 
 	<grid fitparent="1"
 		topleft="sui.background.topleft"
@@ -350,7 +359,11 @@ the object itself is a button.
 		x="290" h="23" w="83" y="7"
 		tabtext="Browser"
 	/>
-
+	<Bento:TabButton
+		id="switch.art"
+		x="321" h="23" w="83" y="7"
+		tabtext="Cover Art"
+	/>
 	<script file="scripts/tabcontrol.maki" param="@HAVE_LIBRARY@"/>
 
 	<group id="sui.components" x="1" y="29" h="-32" w="-2" relatw="1" relath="1"/>
