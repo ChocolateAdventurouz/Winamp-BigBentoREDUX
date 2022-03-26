@@ -50,6 +50,7 @@ System.onScriptLoaded ()
 	sui_ml = sui_components.findObject("wdh.ml");
 	sui_pl = sui_components.findObject("wdh.pl");
 	sui_brw = sui_components.findObject("wdh.browser");
+	sui_art = sui_components.findObject("wdh.art");
 	//--sui_exp = sui_components.findObject("wdh.explorer");
 	//--sui_cfg = sui_components.findObject("wdh.config");
 
@@ -59,6 +60,7 @@ System.onScriptLoaded ()
 	switch_pl = sui_window.findObject("switch.pl");
 	//--switch_exp = sui_window.findObject("switch.explorer");
 	switch_brw = sui_window.findObject("switch.browser");
+	switch_art = sui_window.findObject("switch.art");
 	//--switch_cfg = sui_window.findObject("switch.config");
 
 	hide_sui = normal.getObject("sui.hide");
@@ -142,7 +144,13 @@ loadSUI (string content)
 	{
 		debugString(DEBUG_PREFIX "if(Browser) performed", D_WTF);
 		switchToBrw();
-	}/*--
+	}
+	else if (content == "Cover Art")
+	{
+		debugString(DEBUG_PREFIX "if(Art) performed", D_WTF);
+		switchToArt();
+	}
+	/*--
 	else if (content == "Explorer")
 	{
 		debugString(DEBUG_PREFIX "if(Explorer) performed", D_WTF);

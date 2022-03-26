@@ -86,6 +86,15 @@ System.onGetCancelComponent(String guid, boolean goingvisible) {
 
 		return FALSE;
 	}
+
+	if (guid == ART_GUID && !goingvisible && hiding_art)
+	{
+		debugString(DEBUG_PREFIX "   --> hiding_art", D_WTF);
+		debugString(DEBUG_PREFIX "   return FALSE;", D_WTF);
+		debugString(DEBUG_PREFIX "}", D_WTF);
+
+		return FALSE;
+	}
 	if (guid == ML_GUID && goingvisible && showing_ml)
 	{
 		debugString(DEBUG_PREFIX "   --> showing_ml", D_WTF);
@@ -113,6 +122,14 @@ System.onGetCancelComponent(String guid, boolean goingvisible) {
 	if (guid == PL_GUID && goingvisible && showing_pl)
 	{
 		debugString(DEBUG_PREFIX "   --> showing_pl", D_WTF);
+		debugString(DEBUG_PREFIX "   return FALSE;", D_WTF);
+		debugString(DEBUG_PREFIX "}", D_WTF);
+
+		return FALSE;
+	}
+	if (guid == ART_GUID && goingvisible && showing_art)
+	{
+		debugString(DEBUG_PREFIX "   --> showing_art", D_WTF);
 		debugString(DEBUG_PREFIX "   return FALSE;", D_WTF);
 		debugString(DEBUG_PREFIX "}", D_WTF);
 
@@ -268,6 +285,35 @@ System.onGetCancelComponent(String guid, boolean goingvisible) {
 			dc_showPl();
 
 			return TRUE;
+		} else if (guid == ART_GUID && (window_content != "Art" || isShade)) {
+
+			debugString(DEBUG_PREFIX "   --> external showing_art --- start Timer", D_WTF);
+			debugString(DEBUG_PREFIX "   return TRUE;", D_WTF);	
+			debugString(DEBUG_PREFIX "}", D_WTF);
+
+			if (isShade)
+			{
+				sui_art.hide();
+				player.switchToLayout("normal");
+			}
+
+			//setPrivateString(getSkinName(), "Component", "Vis");
+
+			disablePSOVC();
+			hideVideo();
+			hideMl();
+			//--hideExp();
+			hideBrw();
+			hidePL();
+			//--hideCfg();
+			if (window_content == "Hidden")
+			{
+				setPrivateString(getSkinName(), "Hidden Component", "Vis");
+				dc_showSUI ();
+				return TRUE;
+			}
+			showArt();
+			return FALSE;
 		}
 	}
 	

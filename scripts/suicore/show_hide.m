@@ -29,6 +29,7 @@ switchToMl()
 	hidePL();
 	//--hideExp();
 	hideBrw();
+	hideArt();
 	//--hideCfg();
 	//prohibit a closing bug
 	if (!startup) showMl();
@@ -53,6 +54,7 @@ switchToPl()
 	hideVis();
 	hideVideo();
 	hideML();
+	hideArt();
 	//--hideExp();
 	hideBrw();
 	//--hideCfg();
@@ -77,6 +79,7 @@ switchToVideo()
 	hideMl();
 	hidePL();
 	hideVis();
+	hideArt();
 	//--hideExp();
 	hideBrw();
 	//--hideCfg();
@@ -95,6 +98,7 @@ switchToVis()
 	hideMl();
 	hidePL();
 	hideVideo();
+	hideArt();
 	//--hideExp();
 	hideBrw();
 	//--hideCfg();
@@ -115,9 +119,28 @@ switchToBrw()
 	hideVideo();
 	//--hideExp();
 	hideMl();
+	hideArt();
 	//--hideCfg();
 	showBrw();
 
+	hide_sui.show();
+	show_sui.hide();
+}
+
+switchToArt()
+{
+	if (callbackTimer.isRunning()) return;
+	if (tempDisable.isRunning()) return;
+	tempDisable.start();
+	disablePSOVC();
+	hideVis();
+	hidePL();
+	hideVideo();
+	//--hideExp();
+	hideMl();
+	//--hideCfg();
+	hideBrw();
+	showArt();
 	hide_sui.show();
 	show_sui.hide();
 }
@@ -170,6 +193,7 @@ switchToNoComp ()
 	hideMl();
 	hidePL();
 	hideBrw();
+	hideArt();
 	//--hideExp();
 	//--hideCfg();
 
@@ -522,6 +546,59 @@ hideBrw()
 
 	debugString(DEBUG_PREFIX "}", D_NWTF);
 }
+
+showArt()
+{
+	debugString(DEBUG_PREFIX "showArt() {", D_NWTF);
+
+	showing_art = 1;
+	setPrivateString(getSkinName(), "Component", "Art");
+	GuiObject o = sui_art;
+	if (o != NULL)
+	{ 
+		bypasscancel = 1;
+		if (o) o.show();
+		bypasscancel = 0;
+		debugString(DEBUG_PREFIX "   --> ok", D_NWTF);
+	}
+#ifdef DEBUG
+	else
+	{
+		debugString(DEBUG_PREFIX "   -->  (!)  art object not provided (hide)", D_NWTF);
+	}
+#endif
+	onShowArt();
+	showing_art = 0;
+
+	debugString(DEBUG_PREFIX "}", D_NWTF);
+}
+
+
+hideArt()
+{
+	debugString(DEBUG_PREFIX "hideArt() {", D_NWTF);
+
+	callback_showing_art = 0;
+
+	hiding_art = 1;
+	GuiObject o = sui_art;
+	if (o != NULL) { 
+		bypasscancel = 1;
+		if (o) o.hide();
+		bypasscancel = 0;
+		debugString(DEBUG_PREFIX "   -->  ok", D_NWTF);
+	}
+#ifdef DEBUG
+	else
+	{
+		debugString(DEBUG_PREFIX "   -->  (!)  art object not provided (hide)", D_NWTF);
+	}
+#endif
+	onHideArt();
+	hiding_art = 0;
+
+	debugString(DEBUG_PREFIX "}", D_NWTF);
+}
 /*--
 showExp()
 {
@@ -655,6 +732,8 @@ callbackTimer.onTimer()
 	int _callback_hiding_ml = callback_hiding_ml;
 	int _callback_showing_pl = callback_showing_pl;
 	int _callback_hiding_pl = callback_hiding_pl;
+	int _callback_showing_art = callback_showing_art;
+	int _callback_hiding_art = callback_hiding_art;
 	//--int _callback_showing_exp = callback_showing_exp;
 	//--int _callback_hiding_exp = callback_hiding_exp;
 	int _callback_showing_brw = callback_showing_brw;
@@ -678,6 +757,8 @@ callbackTimer.onTimer()
 	callback_hiding_brw = 0;
 	//--callback_showing_cfg = 0;
 	//--callback_hiding_cfg = 0;
+	callback_showing_art = 0;
+	callback_hiding_art = 0;
 
 	callback_showing_sui = 0;
 	callback_closing_sui = 0;
@@ -729,6 +810,14 @@ callbackTimer.onTimer()
 	if (_callback_hiding_brw == 1)
 	{
 		hideBrw();
+	}
+	if (_callback_showing_art == 1)
+	{
+		showArt();
+	}
+	if (_callback_hiding_art == 1)
+	{
+		hideArt();
 	}
 	/*--if (_callback_showing_cfg == 1)
 	{
@@ -815,6 +904,18 @@ dc_hideBrw()
 {
 	callback_showing_brw = 0;
 	callback_hiding_brw = 1;
+	callbackTimer.start();
+}
+dc_showArt()
+{
+	callback_showing_art = 1;
+	callback_hiding_art = 0;
+	callbackTimer.start();
+}
+dc_hideArt()
+{
+	callback_showing_art = 0;
+	callback_hiding_art = 1;
 	callbackTimer.start();
 }
 /*--
