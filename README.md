@@ -1,5 +1,5 @@
 Latest Version: 1.2.7 ([Changelog](https://github.com/SecurityRaven/Winamp-BigBentoUP/blob/changelogs/1.2.7.txt))
-# Winamp Big BentoU+
+# Winamp Big Bento Redux
 This repository keeps alive the famous skin of Winamp 5, Big Bento by updating some componets and resolving some bugs that were present and not resolved.
 <br>![img](screenshot.png)
 ## WACUP Support
