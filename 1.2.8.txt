@@ -1,0 +1,12 @@
+	Big Bento - Redux
+     [1.2.8 @ 27/3/2022]
+
+- Updated the "Big Bento Cover Art Window" modification [Version: 1.0.2]
+- Fixed the timer overlay
+- Removed the extra "0" from the timer
+- Added the "Pure Dark" Color Theme
+- Fixed bad include (thanks ariszlo for the report)
+- Songticker text is rounded
+- New name "Redux". It is cool, lol
+- Added myself in the about animation (why not?)
+
