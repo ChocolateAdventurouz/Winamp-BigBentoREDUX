@@ -7,7 +7,7 @@ This skin works great on WACUP with the latest preview update. I am aiming to up
 
 ## Installing the skin:
 - On the repo, press code -> Download ZIP
-- Create a folder called "Big Bento Redux" on ``<your winamp installation directory>\Skins`` and extract the zip into the folder
+- Create a folder called "Big Bento Redux" on ``<your winamp installation directory>\Skins`` and extract the contents of the folder into the folder
 - Run Winamp or WACUP and select the skin.
 - Enjoy!
 ## Compiling the scripts (maki)
