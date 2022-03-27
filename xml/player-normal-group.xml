@@ -38,15 +38,15 @@
 	/>
 
 	<SongTicker id="Songticker" 
-		x="60" y="6" h="13" w="-62" relatw="1"
+		x="60" y="6" h="13" w="-60" relatw="1"
 		showlen="1" rightpadding="-3"
 		rightclickaction="trackmenu" dblclickaction="trackinfo" align="right"
-		color="color.display" size="13" valign="top" antialias="0" 
+		color="color.display" size="13" valign="top" antialias="1" 
 	/>
 	<Text id="InfoDisplay" 
 		x="70" y="6" h="20" w="-72" relatw="1" alpha="0"
 		display="SONGTITLE" showlen="1" offsetx="-3" align="right"
-		color="color.display" size="13" valign="top" antialias="0" ghost="1"
+		color="color.display" size="13" valign="top" antialias="1" ghost="1"
 	/>
 
 	<script file="scripts/songticker.maki" param="-7,big"/>
@@ -90,6 +90,7 @@
 		colorband14="136,150,155"
 		colorband15="140,154,159"
 		colorband16="145,159,164"
+		colorband17="145,159,164"
 		colorosc1="82,97,102"
 		colorosc2="83,97,104"
 		colorosc3="106,120,125"
@@ -119,6 +120,7 @@
 		colorband14="136,150,155"
 		colorband15="140,154,159"
 		colorband16="145,159,164"
+		colorband17="145,159,164"
 		colorosc1="82,97,102"
 		colorosc2="83,97,104"
 		colorosc3="106,120,125"
