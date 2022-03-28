@@ -418,8 +418,8 @@ stopped(){
     timerSongTimerReverse.stop();
     PauseBlink.stop();
     PauseBlinkPaused.stop();
-    DisplayTime.setXmlParam("text", "00:00");
-    DisplayTimeShade.setXmlParam("text", "00:00");
+    DisplayTime.setXmlParam("text", "0:00");
+    DisplayTimeShade.setXmlParam("text", "0:00");
 }
 
 playing(){
@@ -427,8 +427,8 @@ playing(){
     currentpos = System.integerToTime(milliseconds);
 
     if(milliseconds < 600000){
-        DisplayTime.setXmlParam("text", "0"+currentpos);
-        DisplayTimeShade.setXmlParam("text", "0"+currentpos);
+        DisplayTime.setXmlParam("text", currentpos);
+        DisplayTimeShade.setXmlParam("text",currentpos);
     }
     else{
         DisplayTime.setXmlParam("text", currentpos);
@@ -445,8 +445,8 @@ playing_rev(){
     currentpos_rev = System.integerToTime(milliseconds-songlength);
 
     if(remainder < 600000){
-        DisplayTime.setXmlParam("text", "-0"+strremainder);
-        DisplayTimeShade.setXmlParam("text", "-0"+strremainder);
+        DisplayTime.setXmlParam("text", "-"+strremainder);
+        DisplayTimeShade.setXmlParam("text", "-"+strremainder);
     }
     else{
         DisplayTime.setXmlParam("text", "-"+strremainder);
@@ -460,8 +460,8 @@ ItsBeenMuchTooLong(){ //I feel it coming on, the feeling's gettin' strong
     milliseconds_rev = milliseconds-songlength;
 
     if(milliseconds_rev < 600000){
-        DisplayTime.setXmlParam("text", "-0"+currentpos_rev);
-        DisplayTimeShade.setXmlParam("text", "-0"+currentpos_rev);
+        DisplayTime.setXmlParam("text", "-"+currentpos_rev);
+        DisplayTimeShade.setXmlParam("text", "-"+currentpos_rev);
     }
     else{
         DisplayTime.setXmlParam("text", "-"+currentpos_rev);
