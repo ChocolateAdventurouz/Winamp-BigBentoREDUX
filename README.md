@@ -16,8 +16,8 @@ This skin works great on WACUP with the latest preview update. I am aiming to up
 
 Compile the scripts 1 by 1 using the following command ``.\mc.exe <script name>``
 
-Therefore, it's recommended to compile them with Vichtor's Winamp Compiler: https://drive.google.com/file/d/1rejKyZkHaDyFJh-iARvx_QIFQkzMbqO8/view
-### Recommended Way (All automaticly):
+Therefore, it's recommended to compile them with ![Vichtor's Winamp Compiler](https://drive.google.com/file/d/1rejKyZkHaDyFJh-iARvx_QIFQkzMbqO8/view) 
+### Recommended Way (Vichtor's Winamp Compiler):
 Place ALL the .m files on the folder and run the file ``buildall.bat``/
 
 
