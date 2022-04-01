@@ -2,9 +2,10 @@ Latest Version: 1.2.8 ([Changelog](https://github.com/SecurityRaven/Winamp-BigBe
 # Winamp Big Bento Redux
 This repository keeps alive the famous skin of Winamp 5, Big Bento by updating some componets and resolving some bugs that were present and not resolved.
 <br>![img](screenshot.png)
-## WACUP Support
-This skin works great on WACUP with the latest preview update. I am aiming to update the window elements in order to bring the Big Bento style completed to WACUP!
+## Support
 
+Tested on: Winamp 5.7/5.666
+WACUP might have problems on it due to its skin engine. If it works properly, then you are lucky. If not, :/
 ## Installing the skin:
 - On the repo, press code -> Download ZIP
 - Create a folder called "Big Bento Redux" on ``<your winamp installation directory>\Skins`` and extract the contents of the folder into the folder
