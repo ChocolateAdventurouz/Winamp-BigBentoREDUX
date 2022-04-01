@@ -304,7 +304,7 @@
 	<bitmap id="winamp.cover.notfound.xxl" file="window/notfoundXXL.png" gammagroup="DisplayText"/>
 	<bitmap id="winamp.cover.shoutcast" file="window/sc_alb_art.jpg" x="0" y="0" h="111" w="111" />
 	<bitmap id="winamp.cover.aolradio" file="window/aol_radio_alb_art.jpg" x="0" y="0" h="111" w="111" />
-
+	<bitmap id="winamp.cover.notfound.patched" file="window/missing_album_art.jpg" x="0" y="0" h="480" w="480"/>
 	<bitmap id="coverflow.button.play.normal" file="window/compcontrols.png" x="256" y="0" h="21" w="24" gammagroup="WindowText"/>
 	<bitmap id="coverflow.button.play.hover" file="window/compcontrols.png" x="256" y="21" h="21" w="24" gammagroup="WindowText"/>
 	<bitmap id="coverflow.button.play.down" file="window/compcontrols.png" x="256" y="42" h="21" w="24" gammagroup="WindowText"/>

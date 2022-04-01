@@ -5,7 +5,7 @@
 	<animatedlayer id="beatvisleft" x="0" y="0" h="28" w="43" image="player.beatvis.left" move="0" autoplay="0" autoreplay="0" ghost="1" />
 	<animatedlayer id="beatvisright" x="44" y="0" h="28" w="43" image="player.beatvis.right" move="0" autoplay="0" autoreplay="0" ghost="1" />
 
-	<togglebutton fitparent="1" rectrgn="1" cfgattrib="{F1036C9C-3919-47ac-8494-366778CF10F9};Enable Beat Visualization" tooltip="Toggle Beat Visualization"/>
+	<togglebutton fitparent="1" rectrgn="1" cfgattrib="{F1036C9C-3919-47ac-8494-366778CF10F9};Enable Beat Visualization" />
 
 </groupdef>
 

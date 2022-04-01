@@ -183,7 +183,7 @@
 
 <groupdef id="info.component.Cover">
 
-	<AlbumArt id="winamp.albumart" fitparent="1" move="0" rectrgn="1" notfoundImage="winamp.cover.notfound.84x84"/>
+	<AlbumArt id="winamp.albumart" fitparent="1" move="0" rectrgn="1" notfoundImage="winamp.cover.notfound.patched"/>
 	<layer id="winamp.webalbumart" fitparent="1" move="0" image="winamp.cover.shoutcast" visible="0"/>
 	<script file="scripts/albumart.maki" param="winamp.albumart" />
 
