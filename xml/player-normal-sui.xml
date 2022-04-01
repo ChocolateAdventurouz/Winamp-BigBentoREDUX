@@ -393,6 +393,7 @@
 <groupdef id="wdh.art">
 	<AlbumArt id="winamp.albumart" fitparent="1" move="0" rectrgn="1" notfoundImage="winamp.cover.notfound.xxl"/>
 	<layer id="winamp.webalbumart" fitparent="1" move="0" image="winamp.cover.shoutcast" visible="0"/>
+	<layer x="2" y="-28" w="-4" h="-26" relatw="1" relath="1" image="window.background.gradient" move="0" ghost="1"/>
 	<script file="scripts/albumart.maki" param="winamp.albumart"/>
 </groupdef>
 
