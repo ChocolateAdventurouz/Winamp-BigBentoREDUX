@@ -97,6 +97,7 @@
 		colorosc4="127,141,146"
 		colorosc5="145,159,164"
 		gammagroup="DisplayText"
+		fps="60"
 	/>
 
 	<vis
@@ -131,6 +132,7 @@
 		flipv="1"
 		mode="1"
 		gammagroup="DisplayText"
+		fps="60"
 	/>
 
 	<layer id="main.vis.trigger" x="11" y="42" h="28" w="108" rectrgn="1"/>
