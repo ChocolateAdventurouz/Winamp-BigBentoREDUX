@@ -2,10 +2,13 @@ Latest Version: 1.2.8 ([Changelog](https://github.com/SecurityRaven/Winamp-BigBe
 # Winamp Big Bento Redux
 This repository keeps alive the famous skin of Winamp 5, Big Bento by updating some componets and resolving some bugs that were present and not resolved.
 <br>![img](screenshot.png)
-## Support
+## Version Support
+The skin (both preview & stable) is tested on these Winamp Versions:
 
-Tested on: Winamp 5.7/5.666
-WACUP might have problems on it due to its skin engine. If it works properly, then you are lucky. If not, :/
+- Winamp 5.666 (b3516)
+- Winamp 5.7 (b3392)
+- WACUP Preview (1.0.21.7236)
+WACUP Beta might have problems on it due to its ``gen_ff.dll`` (press f to pay gen_ff to work). If it works properly, then you are lucky. If not, :/
 ## Installing the skin:
 - On the repo, press code -> Download ZIP
 - Create a folder called "Big Bento Redux" on ``<your winamp installation directory>\Skins`` and extract the contents of the folder into the folder
@@ -21,4 +24,18 @@ Therefore, it's recommended to compile them with [Vichtor's Winamp Compiler](htt
 ### Recommended Way (Vichtor's Winamp Compiler):
 Place ALL the .m files on the folder and run the file ``buildall.bat``/
 
+
+## Disabling the "CoverPlaying" mod
+
+### Edits on XML file:
+First, go to the XML directory from Skin's folder and open the ``player-normal-sui.xml`` file and remove these lines:
+
+```
+<Bento:TabButton
+		id="switch.art"
+		x="321" h="23" w="83" y="7"
+		tabtext="⭐CoverPlaying"
+/>
+```
+Press F5 if you have Winamp/WACUP already open.
 
