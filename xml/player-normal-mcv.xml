@@ -760,8 +760,12 @@ link="sometext" displayed as hover tooltip
 	<group id="info.component.plsidecar" x="2" y="2" h="99" w="-4" relatw="1" visible="0"/>
 
 	<layer id="branding" visible="0" move="0" ghost="1"
-		x="0" y="24" h="53" w="129"
+		x="0" y="24" h="47" w="198"
 		image="infocomp.branding"
+	/>
+	<layer id="branding.pro" visible="0" move="0" ghost="1"
+		x="0" y="24" h="48" w="267"
+		image="infocomp.branding.pro"
 	/>
 
 	<group id="info.component.infodisplay" x="80" y="3" h="-19" relath="1" w="-143" relatw="1" />
