@@ -126,7 +126,16 @@ System.onScriptLoaded()
 	ratingStars = new List;
 
 	group parent = scriptGroup.getParent();
-	l_branding = parent.findObject("branding");
+
+	if (system.isProVersion())
+	{
+		l_branding = parent.findObject("branding.pro");
+	}
+	else
+	{
+		l_branding = parent.findObject("branding");
+	}
+	
 	g_cover = parent.findObject("info.component.cover");
 	_BrandingInit(l_branding, parent, 1, 0);
 
