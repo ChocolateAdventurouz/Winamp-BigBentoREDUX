@@ -560,12 +560,12 @@ link="sometext" displayed as hover tooltip
 	<Text id="label" 
 		x="0" y="0" w="0" relatw="1" h="12"
 		text="Error:"
-		color="color.display" bold="1" fontsize="13" alpha="180" valign="bottom" antialias="0"
+		color="color.display" bold="1" fontsize="13" alpha="180" valign="bottom" antialias="1"
 	/>
 
 	<Text id="text" 
 		x="0" y="0" w="0" relatw="1" h="12"
-		color="color.display" bold="2" fontsize="13" valign="bottom" antialias="0" ticker="1" translate="0" alpha="253"
+		color="color.display" bold="2" fontsize="13" valign="bottom" antialias="1" ticker="1" translate="0" alpha="253"
 	/>
 
 	<layer id="link" x="0" y="0" h="15" w="0" relatw="1" rectrgn="1" move="0" cursor="IDC_HAND"/>
@@ -618,7 +618,7 @@ link="sometext" displayed as hover tooltip
 	<Bento:InfoLine id="infodisplay.line.disc" x="0" y="0" w="0" relatw="1" h="15" visible="0" 
 		shift="-2" link="Click to Show More Information" label="Disc:"/>
 
-	<script file="scripts/fileinfo.maki" param="6" />
+	<script file="scripts/fileinfo.maki" param="5"/>
 
 </groupdef>
 

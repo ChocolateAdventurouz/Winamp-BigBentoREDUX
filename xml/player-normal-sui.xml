@@ -98,59 +98,6 @@
 
 </groupdef>
 
-<groupdef id="browser.scraper">
-
-	<rect x="0" y="18" w="0" relath="1" h="-18" relatw="1" filled="1" color="color.display.bg" />
-
-	<Button id="browser.scraper.show" rectrgn="1"
-		x="-56" h="13" w="50" y="2" relatx="1"
-		image="browser.button.scraper.show.normal"
-		hoverImage="browser.button.scraper.show.hover"
-		downImage="browser.button.scraper.show.down"
-		tooltip="Show Media Monitor"
-	/>
-
-	<Button id="browser.scraper.hide" rectrgn="1"
-		x="-56" h="13" w="50" y="2" relatx="1"
-		image="browser.button.scraper.hide.normal"
-		hoverImage="browser.button.scraper.hide.hover"
-		downImage="browser.button.scraper.hide.down"
-		tooltip="Hide Media Monitor"
-	/>
-
-	<Button id="browser.scraper.play" rectrgn="1"
-		x="-267" h="13" w="38" y="2" relatx="1"
-		image="browser.button.scraper.play.normal"
-		hoverImage="browser.button.scraper.play.hover"
-		downImage="browser.button.scraper.play.down"
-		tooltip="Play selected Items"
-	/>
-
-	<Button id="browser.scraper.download" rectrgn="1"
-		x="-219" h="13" w="70" y="2" relatx="1"
-		image="browser.button.scraper.download.normal"
-		hoverImage="browser.button.scraper.download.hover"
-		downImage="browser.button.scraper.download.down"
-		tooltip="Download selected Items"
-	/>
-
-	<Button id="browser.scraper.rescan" rectrgn="1"
-		x="-139" h="13" w="58" y="2" relatx="1"
-		image="browser.button.scraper.rescan.normal"
-		hoverImage="browser.button.scraper.rescan.hover"
-		downImage="browser.button.scraper.rescan.down"
-		tooltip="Rescan Document"
-	/>
-
-	<layer x="14" y="2" move="0" image="browser.label.scraper"/>
-
-	<List x="0" w="0" y="19" h="-19" relatw="1" relath="1"
-		id="scraper.results"
-		multiselect="1" autodeselect="1" sort="0" focusonclick="1"
-		numcolumns="2" columnwidths="270;-1" columnlabels="File;URL" wa5style="1" 
-	/>
-
-</groupdef>
 
 <groupdef id="wdh.browser">
 
@@ -390,14 +337,36 @@
 
 </groupdef>
 
-<groupdef id="wdh.art">
 
-	<layer x="1" y="4" h="1" w="-2" relatw="1" image="sui.component.bottom2" move="0" alpha="255"/>
-	<layer x="1" y="-24" relaty="1" h="1" w="-2" relatw="1" image="sui.component.top2" move="0" alpha="255"/>
-	<AlbumArt id="winamp.albumart" x="650" y="300" move="1" rectrgn="1" notfoundImage="winamp.cover.notfound.xxl"/>
+<groupdef id="bento.infodisplay.line" embed_xui="text" xuitag="Bento:InfoLine">
+
+	<Text id="label" 
+		x="0" y="0" w="0" relatw="1" h="12"
+		text="Error:"
+		color="color.display" bold="1" fontsize="13" alpha="180" valign="bottom" antialias="1"
+	/>
+
+	<Text id="text" 
+		x="0" y="0" w="0" relatw="1" h="12"
+		color="color.display" bold="2" fontsize="13" valign="bottom" antialias="1" ticker="1" translate="0" alpha="253"
+	/>
+
+	<layer id="link" x="0" y="0" h="15" w="0" relatw="1" rectrgn="1" move="0" cursor="IDC_HAND"/>
+
+	<script file="scripts/infoline.maki" />
+
+</groupdef>
+
+<groupdef id="wdh.art">
+	<text id="gen.infotxt" relatx="1" size="11" bold="0" valign="bottom" x="-270" y="5" w="173" text="⭐CoverPlaying - Version 1.0.5" color="wasabi.titlebar.color" ghost="1" font="Arial" antialias="1"/>
+	<Bento:InfoLine id="infodisplay.line.title" x="1" y="-24" w="0" relatw="1" h="15" visible="0" 
+		shift="-2" link="Search Title" label="Now Playing:" fontsize="16" antialias="1"/>
+	<AlbumArt id="winamp.albumart" move="1" fitparent="1" rectrgn="1" notfoundImage="winamp.cover.notfound.xxl"/>
 	<layer id="winamp.webalbumart" fitparent="1" move="0" image="winamp.cover.shoutcast" visible="0"/>
 	<layer x="2" y="-28" w="-4" h="-26" relatw="1" relath="1" image="window.background.gradient" move="0" ghost="1"/>
 	<script file="scripts/albumart.maki" param="winamp.albumart"/>
+	<script file="scripts/fileinfo.maki" param="0"/>
+	
 </groupdef>
 
 <groupdef id="sui.components">
@@ -516,8 +485,9 @@ the object itself is a button.
 	<Bento:TabButton
 		id="switch.art"
 		x="321" h="23" w="83" y="7"
-		tabtext="Cover Art"
+		tabtext="⭐CoverPlaying"
 	/>
+	
 	<script file="scripts/tabcontrol.maki" param="@HAVE_LIBRARY@"/>
 
 	<group id="sui.components" x="1" y="29" h="-32" w="-2" relatw="1" relath="1"/>
