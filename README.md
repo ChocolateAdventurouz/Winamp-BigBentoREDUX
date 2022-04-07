@@ -1,4 +1,4 @@
-Latest Version: 1.2.9 - Preview | Stability: 88% - It seems buggy...
+Latest Version: 1.2.9 - Preview | Stability: 96% - It is verrry close to "Stable". You should not detect any problems.
 # Winamp Big Bento Redux
 This branch contains the LATEST edited & compiled files. Use it with CAUTION. It might break easily.
 <br>![img](screenshot.png)
