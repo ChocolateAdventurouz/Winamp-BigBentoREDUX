@@ -477,7 +477,7 @@
 		tooltip="Exit Winamp"
 	/>
 
-	<!--text id="gen.infotxt" relatx="1" size="11" bold="0" align="right" x="-270" y="5" w="173" text="Winamp Bento v0.9 #107" color="wasabi.titlebar.color" ghost="1" font="Arial" antialias="0"/-->
+	<text id="gen.infotxt" relatx="1" size="11" bold="0" align="right" x="-270" y="5" w="173" text="Big Bento Redux" color="wasabi.titlebar.color" ghost="1" font="Arial" antialias="1"/>
 
 	<script file="scripts/mainmenu.maki" />
 
