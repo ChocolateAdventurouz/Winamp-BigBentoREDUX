@@ -293,7 +293,8 @@
 	<bitmap id="infocomp.rating.hover" file="window/rating.png" x="11" y="0" h="12" w="11" gammagroup="DisplayText"/>
 	<bitmap id="infocomp.rating.star" file="window/rating.png" x="0" y="0" h="12" w="11" gammagroup="DisplayText"/>
 
-	<bitmap id="infocomp.branding" file="window/branding.png" x="0" y="0" h="53" w="129"/>
+	<bitmap id="infocomp.branding" file="window/branding.png" x="0" y="0" h="47" w="198"/>
+	<bitmap id="infocomp.branding.pro" file="window/branding_pro.png" x="0" y="0" h="48" w="267"/>
 
 	<bitmap id="winamp.cover.notfound" file="xml/winamp/cover/notfound.png" gammagroup="DisplayText"/>
 	<bitmap id="winamp.cover.notfound.60" file="xml/winamp/cover/notfound60.png" gammagroup="DisplayText"/>
@@ -667,5 +668,6 @@
 
 	<bitmap id="shade.button.icon.nowplaying" file="window/shade.png" x="138" y="21" h="21" w="32" gammagroup="PlayerButton"/>
 	<bitmap id="shade.button.icon.search" file="window/shade.png" x="138" y="42" h="21" w="32" gammagroup="PlayerButton"/>
-
+	<!--Redux Elements-->
+	<bitmap id="redux.bg" file="window/redux_bg.jpg" x="0" y="0" h="371" w="640" gammagroup="WindowBackground"/>
 </elements>
