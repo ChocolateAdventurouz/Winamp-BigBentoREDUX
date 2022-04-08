@@ -8,6 +8,9 @@ The skin (both preview & stable) is tested on these Winamp Versions:
 - Winamp 5.666 (b3516)
 - Winamp 5.7 (b3392)
 - WACUP Preview (1.0.21.7236)
+
+Winamp 5.6x or newer are the recommended Winamp versions to run the skin properly.
+<br>
 WACUP Beta might have problems on it due to its ``gen_ff.dll`` (press f to pay gen_ff to work). If it works properly, then you are lucky. If not, :/
 ## Installing the skin:
 - On the repo, press code -> Download ZIP
