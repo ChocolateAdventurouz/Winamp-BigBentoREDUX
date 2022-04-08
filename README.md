@@ -47,6 +47,21 @@ First, go to the XML directory from Skin's folder and open the ``player-normal-s
 ```
 Press F5 if you have Winamp/WACUP already open.
 
+## Modifications
+
+### Change the holdtime for the cycling mcv fileinfo
+```	
+	// A quick guide to the modders in order to change the holdtime for the cycling mcv fileinfo -Rel@m
+
+	cycler = new Timer;
+	// Here is the time in ms to hold every fileinfo
+	cycler.setDelay(4000);
+
+	delayLoad = new Timer;
+	// Here is the time in ms for the transistion progress to cycle
+	delayLoad.setDelay(10);
+```
+Don't forget to compile the script!
 ## Known Issues/Bugs
 
 ### The cycler is overlaying with another cycler. 
