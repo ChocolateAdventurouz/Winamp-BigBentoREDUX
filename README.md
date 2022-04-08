@@ -10,6 +10,8 @@ The skin (both preview & stable) is tested on these Winamp Versions:
 - WACUP Preview (1.0.21.7236)
 
 Winamp 5.6x or newer are the recommended Winamp versions to run the skin properly.
+<BR>
+*UPDATE*: Winamp 5.7 has [an issue with the CoverPlaying mod](). I suggest [removing the mod](https://github.com/SecurityRaven/Winamp-BigBentoREDUX#disabling-the-coverplaying-mod) or go to a newer version of Winamp (5.666 or 5.8)
 <br>
 WACUP Beta might have problems on it due to its ``gen_ff.dll`` (press f to pay gen_ff to work). If it works properly, then you are lucky. If not, :/
 ## Installing the skin:
@@ -42,3 +44,13 @@ First, go to the XML directory from Skin's folder and open the ``player-normal-s
 ```
 Press F5 if you have Winamp/WACUP already open.
 
+## Known Issues/Bugs
+
+### The cycler is overlaying with another cycler. 
+The problem is that the CoverPlaying mod uses mcv's fileinfo elements in order to recieve the song title. This issue is most likely to happen when you first-install the skin (it hurts), or if you have deleted the ``studio.xnf`` file. I am trying to fix the issue.
+### Assertion Failed error :(
+This error pops out when you load CoverPlaying. It is more likely to happen to Winamp 5.7 beta. That's something I can't handle. That's Winamp 5.7's ``gen_ff.dll``
+### The Winamp branding overlays with the eq
+... The issue was discovered older (AOL Era or so). The issue was fixed but they did not provide the fixed `fileinfo.m` file on WASDP 1.14
+### The online services buttons don't work.
+That's something I haven't checked in depth. 
