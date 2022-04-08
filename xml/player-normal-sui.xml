@@ -97,7 +97,58 @@
 	/>
 
 </groupdef>
+<groupdef id="browser.scraper">
 
+	<rect x="0" y="18" w="0" relath="1" h="-18" relatw="1" filled="1" color="color.display.bg" />
+
+	<Button id="browser.scraper.show" rectrgn="1"
+		x="-56" h="13" w="50" y="2" relatx="1"
+		image="browser.button.scraper.show.normal"
+		hoverImage="browser.button.scraper.show.hover"
+		downImage="browser.button.scraper.show.down"
+		tooltip="Show Media Monitor"
+	/>
+
+	<Button id="browser.scraper.hide" rectrgn="1"
+		x="-56" h="13" w="50" y="2" relatx="1"
+		image="browser.button.scraper.hide.normal"
+		hoverImage="browser.button.scraper.hide.hover"
+		downImage="browser.button.scraper.hide.down"
+		tooltip="Hide Media Monitor"
+	/>
+
+	<Button id="browser.scraper.play" rectrgn="1"
+		x="-267" h="13" w="38" y="2" relatx="1"
+		image="browser.button.scraper.play.normal"
+		hoverImage="browser.button.scraper.play.hover"
+		downImage="browser.button.scraper.play.down"
+		tooltip="Play selected Items"
+	/>
+
+	<Button id="browser.scraper.download" rectrgn="1"
+		x="-219" h="13" w="70" y="2" relatx="1"
+		image="browser.button.scraper.download.normal"
+		hoverImage="browser.button.scraper.download.hover"
+		downImage="browser.button.scraper.download.down"
+		tooltip="Download selected Items"
+	/>
+
+	<Button id="browser.scraper.rescan" rectrgn="1"
+		x="-139" h="13" w="58" y="2" relatx="1"
+		image="browser.button.scraper.rescan.normal"
+		hoverImage="browser.button.scraper.rescan.hover"
+		downImage="browser.button.scraper.rescan.down"
+		tooltip="Rescan Document"
+	/>
+
+	<layer x="14" y="2" move="0" image="browser.label.scraper"/>
+
+	<List x="0" w="0" y="19" h="-19" relatw="1" relath="1"
+		id="scraper.results"
+		multiselect="1" autodeselect="1" sort="0" focusonclick="1"
+		numcolumns="2" columnwidths="270;-1" columnlabels="File;URL" wa5style="1" 
+	/>
+</groupdef>
 
 <groupdef id="wdh.browser">
 
