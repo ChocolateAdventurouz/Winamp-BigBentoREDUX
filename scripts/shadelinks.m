@@ -48,7 +48,7 @@ nowplaying.onLeftClick ()
 	{
 		icid = "winshadeiconbento";
 	}	
-	System.navigateUrlBrowser("http://client.winamp.com/nowplaying/artist/?icid="+ icid +"&artistName=" + artist);
+	System.navigateUrlBrowser("https://en.wikipedia.org/wiki/"+ artist);
 }
 
 String getArtist ()

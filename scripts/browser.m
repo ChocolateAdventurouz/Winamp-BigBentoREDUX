@@ -12,7 +12,7 @@ Internet:	www.skinconsortium.com
 -----------------------------------------------------
 ---------------------------------------------------*/
 
-#include <lib/std.mi>
+#include "lib/std.mi"
 #include <lib/config.mi>
 
 #define RELEASE
@@ -1254,8 +1254,7 @@ scr_list.onRightClick (int num)
 			int v = scr_list.getNumItems();
 			for ( int i = 0; i < v ; i++ )
 			{
-				// System.downloadURL(scr_list.getItemLabel(i,1), scr_list.getItemLabel(i,0), "Download " + getExtFamily(scr_list.getItemLabel(i,1)));
-                messageBox("The Browser is being re-worked. Until the construction is finished, some features won't be available.", "Information", 0, "");
+				System.downloadURL(scr_list.getItemLabel(i,1), scr_list.getItemLabel(i,0), "Download " + getExtFamily(scr_list.getItemLabel(i,1)));
 			}
 		}
 		else if (result == 101) selectAll();
@@ -1287,8 +1286,7 @@ scr_download.onLeftClick ()
 		int v = scr_list.getNumItems();
 		for ( int i = 0; i < v ; i++ )
 		{
-			//System.downloadURL(scr_list.getItemLabel(i,1), scr_list.getItemLabel(i,0), "Download " + getExtFamily(scr_list.getItemLabel(i,1)));
-            messageBox("The Browser is being re-worked. Until the construction is finished, some features won't be available.", "Information", 0, "");
+			System.downloadURL(scr_list.getItemLabel(i,1), scr_list.getItemLabel(i,0), "Download " + getExtFamily(scr_list.getItemLabel(i,1)));
 		}
 	}
 	else
@@ -1433,8 +1431,7 @@ downloadListItem (int num)
 	if (sel == scr_list.getNextItemSelected(sel))
 	{
 		string vv = scr_list.getItemLabel(sel,0);
-		//System.downloadURL(scr_list.getItemLabel(sel,1), vv, "Download File");	
-        messageBox("The Browser is being re-worked. Until the construction is finished, some features won't be available.", "Information", 0, "");
+		System.downloadURL(scr_list.getItemLabel(sel,1), vv, "Download File");	
 		return;
 	}
 	
@@ -1442,7 +1439,6 @@ downloadListItem (int num)
 	for ( int i = 0; i < v ; i++ )
 	{
 		string vv = scr_list.getItemLabel(i,0);
-		if (scr_list.getItemSelected(i)) messageBox("The Browser is being re-worked. Until the construction is finished, some features won't be available.", "Information", 0, "");
-        //System.downloadURL(scr_list.getItemLabel(i,1), vv, "Download File");		
+        System.downloadURL(scr_list.getItemLabel(i,1), vv, "Download File");		
 	}
 }
