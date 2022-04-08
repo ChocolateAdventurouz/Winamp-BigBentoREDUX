@@ -11,7 +11,7 @@ The skin (both preview & stable) is tested on these Winamp Versions:
 
 Winamp 5.6x or newer are the recommended Winamp versions to run the skin properly.
 <BR>
-*UPDATE*: Winamp 5.7 has [an issue with the CoverPlaying mod](). I suggest [removing the mod](https://github.com/SecurityRaven/Winamp-BigBentoREDUX#disabling-the-coverplaying-mod) or go to a newer version of Winamp (5.666 or 5.8)
+*UPDATE*: Winamp 5.7 has [an issue with the CoverPlaying mod](Known Issues/Bugs). I suggest [removing the mod](https://github.com/SecurityRaven/Winamp-BigBentoREDUX#disabling-the-coverplaying-mod) or go to a newer version of Winamp (5.666 or 5.8)
 <br>
 WACUP Beta might have problems on it due to its ``gen_ff.dll`` (press f to pay gen_ff to work). If it works properly, then you are lucky. If not, :/
 ## Installing the skin:
@@ -53,4 +53,4 @@ This error pops out when you load CoverPlaying. It is more likely to happen to W
 ### The Winamp branding overlays with the eq
 ... The issue was discovered older (AOL Era or so). The issue was fixed but they did not provide the fixed `fileinfo.m` file on WASDP 1.14
 ### The online services buttons don't work.
-That's something I haven't checked in depth. 
+That's something I haven't checked in depth. More updates soon ;)
