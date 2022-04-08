@@ -538,7 +538,7 @@
 		id="label"
 		x="0" y="0" w="0" relatw="1" h="12"
 		text="Rating:"
-		color="color.display" bold="1" fontsize="13" alpha="180" valign="bottom" antialias="0"
+		color="color.display" bold="1" fontsize="13" alpha="180" valign="bottom" antialias="1"
 	/>
 
 	<group id="infodisplay.line.rating.stars" x="0" y="0" w="0" relatw="1" />
