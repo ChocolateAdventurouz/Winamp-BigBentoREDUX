@@ -1,6 +1,9 @@
+![size](https://img.shields.io/github/repo-size/SecurityRaven/Winamp-BigBentoREDUX?style=flat-square)
+![tweet](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FSecurityRaven%2FWinamp-BigBentoREDUX)
+<br>
 Latest Version: 1.2.8 ([Changelog](https://github.com/SecurityRaven/Winamp-BigBentoUP/blob/changelogs/1.2.8.txt))
 # Winamp Big Bento Redux
-This repository keeps alive the famous skin of Winamp 5, Big Bento by updating some componets and resolving some bugs that were present and not resolved.
+This repository keeps alive the famous skin of Winamp 5, Big Bento by updating some components and resolving some bugs that were present and not resolved.
 <br>![img](screenshot.png)
 ## Version Support
 The skin (both preview & stable) is tested on these Winamp Versions:
@@ -11,12 +14,12 @@ The skin (both preview & stable) is tested on these Winamp Versions:
 
 Winamp 5.6x or newer are the recommended Winamp versions to run the skin properly.
 <BR>
-*UPDATE*: Winamp 5.7 has [an issue with the CoverPlaying mod](Known Issues/Bugs). I suggest [removing the mod](https://github.com/SecurityRaven/Winamp-BigBentoREDUX#disabling-the-coverplaying-mod) or go to a newer version of Winamp (5.666 or 5.8)
+*UPDATE*: Winamp 5.7 has [an issue with the CoverPlaying mod](). I suggest [removing the mod](https://github.com/SecurityRaven/Winamp-BigBentoREDUX#disabling-the-coverplaying-mod) or go to a newer version of Winamp (5.666 or 5.8)
 <br>
 WACUP Beta might have problems on it due to its ``gen_ff.dll`` (press f to pay gen_ff to work). If it works properly, then you are lucky. If not, :/
 ## Installing the skin:
 - On the repo, press code -> Download ZIP
-- Create a folder called "Big Bento Redux" on ``<your winamp installation directory>\Skins`` and extract the contents of the folder into the folder
+- Create a folder called "Big Bento Redux" on ``<your Winamp installation directory>\Skins`` and extract the contents of the folder into the folder
 - Run Winamp or WACUP and select the skin.
 - Enjoy!
 ## Compiling the scripts (maki)
@@ -47,7 +50,7 @@ Press F5 if you have Winamp/WACUP already open.
 ## Known Issues/Bugs
 
 ### The cycler is overlaying with another cycler. 
-The problem is that the CoverPlaying mod uses mcv's fileinfo elements in order to recieve the song title. This issue is most likely to happen when you first-install the skin (it hurts), or if you have deleted the ``studio.xnf`` file. I am trying to fix the issue.
+The problem is that the CoverPlaying mod uses mcv's fileinfo elements in order to receive the song title. This issue is most likely to happen when you first-install the skin (it hurts), or if you have deleted the ``studio.xnf`` file. I am trying to fix the issue.
 ### Assertion Failed error :(
 This error pops out when you load CoverPlaying. It is more likely to happen to Winamp 5.7 beta. That's something I can't handle. That's Winamp 5.7's ``gen_ff.dll``
 ### The Winamp branding overlays with the eq
