@@ -31,12 +31,20 @@
 		pauseBitmap="player.display.status.paused"
 	/>
 
+
+
 	<text id="SongTime"
-		x="2" y="8" h="31" w="102"
+		x="2" y="6" h="31" w="102"
 		font="player.bitmapfont.nums" timecolonwidth="6"
 		display="time" align="left" alpha="220"
 	/>
 
+	<text id="FullTime"
+		x="100" y="6" h="31" w="80"
+		font="player.bitmapfont.nums.noreflect" timecolonwidth="6"
+		display="time" align="right" alpha="255"
+	/>
+	<text id="gen.infotxt" size="43" bold="1" align="left" x="90" y="10" w="173" text="/" label="" color="#ffffff" ghost="1" font="Tahoma" antialias="1"/>
 	<SongTicker id="Songticker" 
 		x="60" y="6" h="13" w="-60" relatw="1"
 		showlen="1" rightpadding="-3"
@@ -48,6 +56,7 @@
 		display="SONGTITLE" showlen="1" offsetx="-3" align="right"
 		color="color.display" size="13" valign="top" antialias="1" ghost="1"
 	/>
+
 
 	<script file="scripts/songticker.maki" param="-7,big"/>
 

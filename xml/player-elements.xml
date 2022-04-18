@@ -269,8 +269,9 @@
 	<bitmap id="infocomp.button.blank.hover" file="window/componentcontrols.png" x="32" y="272" h="17" w="32" gammagroup="PlayerButton"/>
 	<bitmap id="infocomp.button.blank.down" file="window/componentcontrols.png" x="64" y="272" h="17" w="32" gammagroup="PlayerButton"/>
 
-	<bitmap id="infocomp.button.icon.search" file="window/componentcontrols.png" x="32" y="289" h="17" w="32" gammagroup="PlayerButton"/>
-	<bitmap id="infocomp.button.icon.nowplaying" file="window/componentcontrols.png" x="64" y="289" h="17" w="32" gammagroup="PlayerButton"/>
+	<bitmap id="infocomp.button.icon.bg" file="window/componentcontrols.png" x="0" y="289" h="17" w="32" gammagroup="PlayerDisplay"/>
+	<bitmap id="infocomp.button.icon.search" file="window/componentcontrols.png" x="32" y="289" h="17" w="32" gammagroup="DisplayText"/>
+	<bitmap id="infocomp.button.icon.nowplaying" file="window/componentcontrols.png" x="64" y="289" h="17" w="32" gammagroup="DisplayText"/>
 
 	<bitmap id="infocomp.button.toggle.normal" file="window/componentcontrols.png" x="0" y="102" h="17" w="32" gammagroup="PlayerButton"/>
 	<bitmap id="infocomp.button.toggle.hover" file="window/componentcontrols.png" x="32" y="102" h="17" w="32" gammagroup="PlayerButton"/>
@@ -526,7 +527,7 @@
 	<bitmap id="config.button.text.notifier" file="window/config.png" x="0" y="42" h="14" w="72" gammagroup="DisplayText"/>
 	<bitmap id="config.button.text.appearance" file="window/config.png" x="0" y="56" h="14" w="72" gammagroup="DisplayText"/>
 	<bitmap id="config.button.text.playlist" file="window/config.png" x="72" y="14" h="14" w="72" gammagroup="DisplayText"/>
-
+	<bitmap id="config.button.text.redux" file="window/config.png" x="72" y="18" h="14" w="72" gammagroup="DisplayText"/>
 	<bitmap id="config.button.selected" file="$solid" h="14" w="72" color="49,53,64" gammagroup="SelectionBg"/>
 	<bitmap id="config.button.hover" file="$solid" h="14" w="72" color="31,35,44" gammagroup="SelectionBg"/>
 
@@ -607,9 +608,10 @@
 	<bitmap id="config.notifier.text.alphafade" file="window/config.png" x="13" y="292" h="12" w="68" gammagroup="DisplayText"/>
 	<bitmap id="config.notifier.text.vslide" file="window/config.png" x="158" y="56" h="12" w="68" gammagroup="DisplayText"/>
 	<bitmap id="config.notifier.text.hslide" file="window/config.png" x="158" y="42" h="12" w="68" gammagroup="DisplayText"/>
-
+	<bitmap id="config.notifier.text." file="window/config.png" x="158" y="42" h="12" w="68" gammagroup="DisplayText"/>
 	<bitmap id="config.background.over" file="window/songinfo-gradient.png" x="0" y="13" h="13" w="74" gammagroup="PlayerDisplay"/>
 
+	<bitmap id="config.redux.text.ftimer" file="window/config.png" x="158" y="42" h="12" w="68" gammagroup="DisplayText"/>
 
 	<!-- Shade -->
 
@@ -668,6 +670,4 @@
 
 	<bitmap id="shade.button.icon.nowplaying" file="window/shade.png" x="138" y="21" h="21" w="32" gammagroup="PlayerButton"/>
 	<bitmap id="shade.button.icon.search" file="window/shade.png" x="138" y="42" h="21" w="32" gammagroup="PlayerButton"/>
-	<!--Redux Elements-->
-	<bitmap id="redux.bg" file="window/redux_bg.jpg" x="0" y="0" h="371" w="640" gammagroup="WindowBackground"/>
 </elements>
