@@ -25,13 +25,14 @@ Internet:	www.skinconsortium.com
 #include attribs/init_songticker.m
 #include attribs/init_notifier.m
 #include attribs/init_browser.m
-
+#include clientversioning.mI
 Global Configattribute FontRenderer, findOpenRect;
 Global String FontRenderer_default, findOpenRect_default;
 Global configAttribute skin_attrib;
 
 System.onScriptLoaded()
-{
+{	
+	clientversioning();
 	initAttribs_Appearance();
 	initAttribs_Songticker();
 	initAttribs_Autoresize();

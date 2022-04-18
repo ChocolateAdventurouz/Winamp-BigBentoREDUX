@@ -15,7 +15,6 @@ Internet:	www.skinconsortium.com
 #include attribs/init_windowpage.m
 
 #include <lib/com/songinfo.m>
-
 //#define DEBUG
 #define FILE_NAME "fileinfo.m"
 #include <lib/com/debug.m>
@@ -68,11 +67,15 @@ System.onScriptLoaded()
 	initAttribs_windowpage();
 
 	scriptGroup = getScriptGroup();
+	// A quick guide to the modders in order to change the holdtime for the cycling mcv fileinfo -Rel@m
+
 
 	cycler = new Timer;
+	// Here is the time in ms to hold every fileinfo
 	cycler.setDelay(4000);
 
 	delayLoad = new Timer;
+	// Here is the time in ms for the transistion progress to cycle
 	delayLoad.setDelay(10);
 
 	maxlines = stringToInteger(getParam());
@@ -127,6 +130,11 @@ System.onScriptLoaded()
 
 	group parent = scriptGroup.getParent();
 
+	if (getPlayitemmetadatastring("artist") == 0 && getplayitemmetadatastring("title") == 0)
+	{
+		songinfo_reload();
+		loadFileInfo ();
+	}
 	if (system.isProVersion())
 	{
 		l_branding = parent.findObject("branding.pro");
@@ -175,6 +183,16 @@ System.onScriptLoaded()
 				showBranding();
 			}
 		}
+
+
+		if (removePath(getPlayItemString()) == "demo.aac") // Show branding if playing 5.1 DJ Mike
+		{
+			if (getPlayitemmetadatastring("artist") == "DJ Mike Llama" && getplayitemmetadatastring("title") == "Llama Whippin' Experience")
+			{
+				showBranding();
+			}
+		}
+
 	}
 }
 
@@ -216,6 +234,11 @@ System.onTitleChange (String newtitle)
 			showBranding();
 			return;
 		}
+	}
+	if (getPlayitemmetadatastring("artist") == "" && getplayitemmetadatastring("title") == "")
+	{
+			cycler.start();
+			return;
 	}
 
 	debugString(DEBUG_PREFIX "System.onTitleChange() -> loadFileInfo();", D_WTF);
@@ -1206,6 +1229,11 @@ showBranding()
 	g_sname.hide();
 	g_disc.hide();
 
+	// Rel@m: Added handling to the eq (called from mcv)
+	if (ic_eq.getData() == "1")
+	{
+		return;
+	}
 	if (ic_vis_fileinfo.getData() == "1")
 	{
 		_BrandingsetXSpace((g_cover.getGuiW() + 2) / 2);

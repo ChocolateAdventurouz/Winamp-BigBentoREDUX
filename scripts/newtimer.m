@@ -12,8 +12,8 @@
 
 #include "lib/std.mi"
 
-Global String currentpos, strremainder, currentpos_rev;
-Global GuiObject DisplayTime, DisplayTimeShade;
+Global String currentpos, strremainder, currentpos_rev, songlength_mod;
+Global GuiObject DisplayTime, DisplayTimeShade, FullTime, FullTimeShade;
 Global Timer timerSongTimer;
 Global Timer timerSongTimerReverse;
 Global Timer PauseBlinkPaused, PauseBlink, Clock;
@@ -23,6 +23,7 @@ Global int songlength;
 Global int remainder;
 Global int milliseconds_rev;
 Global int i;
+Global int flength;
 
 Global PopUpMenu clockMenu;
 
@@ -48,18 +49,21 @@ System.onScriptLoaded()
     Group mainshade = getContainer("main").getLayout("shade");
     /* Replace "timer" with "shade.time" for Winamp Classic Modern */
     DisplayTimeShade = mainshade.findObject("SongTime");
-
+    FullTimeShade = mainshade.findObject("FullTime");
     Group mainnormal = getContainer("main").getLayout("normal");
     /* Replace "timer" with "display.time" for Winamp Classic Modern */
     DisplayTime = mainnormal.findObject("SongTime");
+
+    FullTime = mainnormal.findObject("FullTime");
     //The above was taken from Ariszló's updated oldtimer.maki script
     //Allows it to be included in the skin.xml file of the skin
 
     //ints for playback
     milliseconds = System.getPosition();
-    songlength = StringtoInteger(System.getPlayItemMetaDataString("length"));
+
     remainder = songlength - milliseconds;
     milliseconds_rev = milliseconds-songlength;
+
 
     //strings for playback
     currentpos = System.integerToTime(milliseconds);
@@ -201,6 +205,7 @@ DisplayTimeShade.onLeftButtonDown(int x, int y)
 //Here we run these checks every time a playback related action happens
 //It's not enough to check on title change
 System.onPlay(){
+
     int timermode = getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1);
 
     TimeElapsedOrRemaining();
@@ -250,6 +255,7 @@ System.onResume(){
 System.onTitleChange(String info){
     int timermode = getPrivateInt(getSkinName(), "TimerElapsedRemaining", 1);
 
+
     TimeElapsedOrRemaining();
     if (timermode == 2){
         if(songlength <= 0){
@@ -273,7 +279,6 @@ StaticTime(){ //Needed since the timer has a delay of 50ms and we don't want any
 
 StaticTimeRemainder(){ //Needed since the timer has a delay of 50ms and we don't want any odd flashing on loading
     milliseconds = System.getPosition();
-    songlength = StringtoInteger(System.getPlayItemMetaDataString("length"));
 
 //The purpose of this check is to ensure we properly place
 //a "0" if we happen to be below 600000ms, or 10 minutes
@@ -299,7 +304,6 @@ timerSongTimer.onTimer(){
 
 timerSongTimerReverse.onTimer(){
     milliseconds = System.getPosition();
-    songlength = StringtoInteger(System.getPlayItemMetaDataString("length"));
 
 //The purpose of this check is to ensure we properly place
 //a "0" if we happen to be below 600000ms, or 10 minutes
@@ -331,7 +335,6 @@ AreWePlaying(){
 
 InReverse(){
 //Just some sanity checks to ensure we're in the right modes
-    songlength = StringtoInteger(System.getPlayItemMetaDataString("length"));
 //In case of streams or VGM formats with endless playback
 //We don't want the user to still be able to toggle
 //between time remaining or elapsed, so we force
@@ -418,27 +421,34 @@ stopped(){
     timerSongTimerReverse.stop();
     PauseBlink.stop();
     PauseBlinkPaused.stop();
-    DisplayTime.setXmlParam("text", "0:00");
-    DisplayTimeShade.setXmlParam("text", "0:00");
+    DisplayTime.setXmlParam("text", "00:00");
+    DisplayTimeShade.setXmlParam("text", "00:00");
 }
 
 playing(){
     milliseconds = System.getPosition();
     currentpos = System.integerToTime(milliseconds);
 
+    // To-do: Fix the extra 0 which is overlaying
     if(milliseconds < 600000){
+        
         DisplayTime.setXmlParam("text", currentpos);
-        DisplayTimeShade.setXmlParam("text",currentpos);
+        DisplayTimeShade.setXmlParam("text", currentpos);
+        flength = StringtoInteger(System.getPlayItemMetaDataString("length"));
+        songlength_mod = integerToTime(flength);
+        FullTime.setXmlParam("text", songlength_mod);
+        FullTimeShade.setXmlParam("text", songlength_mod);
     }
     else{
         DisplayTime.setXmlParam("text", currentpos);
         DisplayTimeShade.setXmlParam("text", currentpos);
+        FullTime.setXmlParam("text", songlength_mod);    
+        FullTimeShade.setXmlParam("text", songlength_mod);
     }
 }
 
 playing_rev(){
     milliseconds = System.getPosition();
-    songlength = StringtoInteger(System.getPlayItemMetaDataString("length"));
     remainder = songlength - milliseconds;
     milliseconds_rev = milliseconds-songlength;
     strremainder = System.integerToTime(remainder);
@@ -456,7 +466,6 @@ playing_rev(){
 
 ItsBeenMuchTooLong(){ //I feel it coming on, the feeling's gettin' strong
     milliseconds = System.getPosition();
-    songlength = StringtoInteger(System.getPlayItemMetaDataString("length"));
     milliseconds_rev = milliseconds-songlength;
 
     if(milliseconds_rev < 600000){

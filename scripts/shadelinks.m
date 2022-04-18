@@ -12,9 +12,8 @@ Internet:	www.skinconsortium.com
 -----------------------------------------------------
 ---------------------------------------------------*/
 
-#include <lib/std.mi>
+#include "lib/std.mi"
 #include <lib/com/songinfo.m>
-
 Function String getArtist ();
 
 Global Button search, nowplaying;
@@ -30,7 +29,11 @@ System.onScriptLoaded ()
 search.onLeftClick ()
 {
 	String artist = getArtist();
-	if (artist == "") return;
+	if (artist == "") 
+	{
+		messagebox("Artist is not found on the file metadata", "Info", 0, "");
+		return;
+	}
 
 	getContainer("main").switchToLayout("normal");
 	group sui = getContainer("main").getLayout("normal").findObject("sui.content");
@@ -40,7 +43,11 @@ search.onLeftClick ()
 nowplaying.onLeftClick ()
 {
 	String artist = getArtist();
-	if (artist == "") return;
+	if (artist == "") 
+	{
+		messagebox("Artist is not found on the file metadata", "Info", 0, "");
+		return;
+	}
 
 	//getContainer("main").switchToLayout("normal");
 	String icid = "fileinfoicon";
@@ -48,7 +55,7 @@ nowplaying.onLeftClick ()
 	{
 		icid = "winshadeiconbento";
 	}	
-	System.navigateUrlBrowser("https://en.wikipedia.org/wiki/"+ artist);
+	System.navigateUrlBrowser("https://en.wikipedia.org/wiki/" + artist);
 }
 
 String getArtist ()

@@ -58,7 +58,7 @@ AlbumArt.onRightButtonDown (int x, int y)
 	}
 	else if (result == 3)
 	{
-		messagebox("\n Original Developers/Designers: Martin Pöhlmann, Taber Buhl, Ben Allison \n Unofficial Maintainer: Rel@m aka SecurityRaven \n \n Whip the llama's ass ;)", "🦙 Big Bento Redux [Version 1.2.9 Beta]", 0, "🦙");
+		messagebox("\n Original Developers/Designers: Martin Pöhlmann, Taber Buhl, Ben Allison \n Unofficial Maintainer: ChocolateAdventurouz \n \n Whip the llama's ass ;)", "🦙 Big Bento Redux [Version 1.2.9 Beta]", 0, "🦙");
 		return;
 	}
 }

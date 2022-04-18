@@ -1,0 +1,39 @@
+/*---------------------
+    Filename: clientversioning.mi
+    Name: Winamp Client Version Blocker/Locker
+    Authors: Rel@m
+    Date: 14. Apr. 2022 - 23:46
+    Used for: Big Bento Redux
+    Description: This script checks if the mininum set version is the same or newer. If it is older, the skin won't launch and it will change to Winamp Classic.
+    Note: It is recommended to put it on the first script that is executed on the skin.
+    Usage: Include the script and run the function clientversioning(); .
+    Requirements: 5.51+
+-----------------------*/
+
+#include <lib/std.mi>
+
+Function clientversioning();
+clientversioning() {
+
+/*-------------------------
+Example: That lines block executing the skin if the version is lower that 5.6.
+That is being used on Big Bento Redux. Change the values with your own prefered mininum version
+---------------------------*/
+    if (System.getWinampVersion() < "5.6") {
+        messagebox("Error at Initalizing The Skin", "Error", 0, "");
+        System.LockUI();
+        System.switchSkin("Winamp Classic"); // We change to the Classic Skin because it is intergrated to Winamp, and we know that it is going to work.
+        return 1;
+
+    }
+    else if (System.getWinampVersion() > "5.6") {
+        return;
+    }
+    else if (System.getWinampVersion() == "5.666" ) { 
+        return;
+    }
+    else // In case loading from other versions (5.623), don't refuse to load.
+    {
+        return;
+    }
+}

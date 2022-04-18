@@ -14,33 +14,52 @@ Internet:	www.skinconsortium.com
 
 #include <lib/std.mi>
 #include attribs/init_songticker.m
-
 Function setTextW();
 Function updateTickerScrolling();
 
 Global Timer SongTickerTimer;
 Global GuiObject SongTicker;
-Global Text SongTime, InfoDisplay;
+Global Text SongTime, InfoDisplay, FullTime;
 Global int SongTicker_x, SongTicker_w, total_w;
 Global int SongTime_x, SongTime_w, offset_x;
-
+Global int FullTime_x, FullTime_w;
 Global Boolean isShade, byPassTimer;
 
 System.onScriptLoaded ()
 {
 	initAttribs_Songticker();
 
+	Group mainnormal = getContainer("main").getLayout("normal");
 	group sg = getScriptGroup();
-
+	FullTime = mainnormal.findObject("FullTime");
 	if (sg.getParentLayout().getID() == "shade") isShade = TRUE;
 
 	SongTicker = sg.findObject("songticker");
 	InfoDisplay = sg.findObject("InfoDisplay");
+	FullTime = sg.findObject("FullTime");
 	SongTickerTimer = new Timer;
 	SongTickerTimer.setDelay(3333);
 
 	SongTime = sg.findObject("SongTime");
+	
+	if (SongTicker == NULL) 
+	{
+		messagebox("The SongTicker object is not found. The skin will not run. Loading Winamp Classic...", "Error", 0, "");
+		switchSkin("Winamp Classic");
 
+	}
+
+	if (FullTime == NULL) 
+	{
+		messagebox("The FullTime object is not found. The skin will not run. Loading Winamp Classic...", "Error", 0, "");
+		switchSkin("Winamp Classic");
+
+	}
+	if (SongTime == NULL)
+	{
+		messagebox("The SongTime object is not found. The skin will not run. Loading Winamp Classic...", "Error", 0, "");
+		switchSkin("Winamp Classic");
+	} 
 	SongTicker_x = SongTicker.getGuiX();
 	SongTicker_w = SongTicker.getGuiW();
 
@@ -51,6 +70,8 @@ System.onScriptLoaded ()
 
 	offset_x = stringToInteger(getParam());
 
+	FullTime_x = FullTime.getGuiX();
+	FullTime_w = FullTime.getTextWidth();
 	setTextW();
 
 	updateTickerScrolling();
@@ -150,7 +171,7 @@ setTextW ()
 		return;
 	}
 
-	SongTicker_X = SongTime_X + SongTime_w + offset_x;
+	SongTicker_X = SongTime_x + SongTime_w + FullTime_x + FullTime_w + offset_x - 15;
 	SongTicker_W = total_w - SongTicker_X;
 
 	/*if (!isShade)
