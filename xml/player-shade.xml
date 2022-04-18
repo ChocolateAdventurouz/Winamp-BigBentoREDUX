@@ -58,6 +58,13 @@
 		right="shade.display.right"
 	/>
 
+	<text id="FullTime"
+		x="20" y="7" h="5" w="35" relatw="0" timeroffstyle="1"
+		font="player.bitmapfont.songinfo" timecolonwidth="6"
+		display="time" align="right" alpha="220"
+	/>
+	<text id="gen.infotxt" size="5" bold="0" align="left" x="25" y="5" h="10" w="35" text="/" label="" color="#ffffff" ghost="1" font="Arial" antialias="1"/>
+
 	<text id="SongTime"
 		x="3" y="7" h="5" w="35" relatw="0" timeroffstyle="1" timecolonwidth="6"
 		display="time" align="left" font="player.bitmapfont.songinfo"
