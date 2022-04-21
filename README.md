@@ -3,7 +3,7 @@
 <br>
 Latest Version: 1.2.8 ([Changelog](https://github.com/SecurityRaven/Winamp-BigBentoUP/blob/changelogs/1.2.8.txt))
 <br>
-News: Τemporarily Archived. Coming again soon... The Bento Llama will be back soon.
+News: It is back! New features are coming...
 # Winamp Big Bento Redux
 This repository keeps alive the famous skin of Winamp 5, Big Bento by updating some components and resolving some bugs that were present and not resolved.
 <br>![img](screenshot.png)
