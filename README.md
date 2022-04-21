@@ -14,12 +14,14 @@ The skin (both preview & stable) is tested on these Winamp Versions:
 - WACUP Preview (1.0.21.7236)
 - Winamp 5.571
 - Winamp 5.8
+<br>
 [STABLE] Winamp 5.6x or newer are the required Winamp versions to run the skin properly.
 <BR>
 [PREVIEW] Winamp 5.6x or newer are the required Winamp versions to run the skin properly.
 <br>
 WACUP Beta might have problems on it due to its ``gen_ff.dll`` (press f to pay gen_ff to work). If it works properly, then you are lucky. If not, :/
-## Installing the skin:
+
+<br><h2> Installing the skin: </h2>
 - On the repo, press code -> Download ZIP
 - Create a folder called "Big Bento Redux" on ``<your Winamp installation directory>\Skins`` and extract the contents of the folder into the folder
 - Run Winamp or WACUP and select the skin.
