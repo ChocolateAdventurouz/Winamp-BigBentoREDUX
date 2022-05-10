@@ -515,7 +515,7 @@ extern Int System.getAlbumArt(String playitem); //Requires 5.5 // Will return 1 
 */
 extern System.downloadMedia(String url, String destinationPath, boolean wantAddToML, boolean notifyDownloadsList); // Requires 5.54
 deprecated extern System.downloadURL(String url, String destination_filename, String progress_dialog_title); //Requires 5.5 // destination_filename is just a dummy parameter as well as progress_dialog_title - use download() instead
-
+extern System.downloadURL(String url, String destination_filename, String progress_dialog_title); //Rel@m: Added for Big Bento Redux's browser functionality
 extern System.onDownloadFinished(String url, boolean success, String filename); // Requires 5.53
 extern String System.getDownloadPath();	// Requires 5.53 // returns the CD Ripping Directory
 extern System.setDownloadPath(String new_path);	// Requires 5.53 // Sets the CD Ripping Directory
