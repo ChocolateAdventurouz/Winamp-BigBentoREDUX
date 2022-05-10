@@ -67,6 +67,3 @@ restore.onLeftClick ()
 
 	parent.resize(lx,ly,lw,lh);
 }
-
-
-// TODO (mpdeimos) add scale recognizing

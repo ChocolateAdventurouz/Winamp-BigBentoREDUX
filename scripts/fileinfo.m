@@ -15,7 +15,6 @@ Internet:	www.skinconsortium.com
 #include attribs/init_windowpage.m
 
 #include <lib/com/songinfo.m>
-
 //#define DEBUG
 #define FILE_NAME "fileinfo.m"
 #include <lib/com/debug.m>
@@ -68,11 +67,15 @@ System.onScriptLoaded()
 	initAttribs_windowpage();
 
 	scriptGroup = getScriptGroup();
+	// A quick guide to the modders in order to change the holdtime for the cycling mcv fileinfo -Rel@m
+
 
 	cycler = new Timer;
+	// Here is the time in ms to hold every fileinfo
 	cycler.setDelay(4000);
 
 	delayLoad = new Timer;
+	// Here is the time in ms for the transistion progress to cycle
 	delayLoad.setDelay(10);
 
 	maxlines = stringToInteger(getParam());
@@ -126,7 +129,16 @@ System.onScriptLoaded()
 	ratingStars = new List;
 
 	group parent = scriptGroup.getParent();
-	l_branding = parent.findObject("branding");
+
+	if (system.isProVersion())
+	{
+		l_branding = parent.findObject("branding.pro");
+	}
+	else
+	{
+		l_branding = parent.findObject("branding");
+	}
+	
 	g_cover = parent.findObject("info.component.cover");
 	_BrandingInit(l_branding, parent, 1, 0);
 
@@ -166,6 +178,16 @@ System.onScriptLoaded()
 				showBranding();
 			}
 		}
+
+
+		if (removePath(getPlayItemString()) == "demo.aac") // Show branding if playing 5.1 DJ Mike
+		{
+			if (getPlayitemmetadatastring("artist") == "DJ Mike Llama" && getplayitemmetadatastring("title") == "Llama Whippin' Experience")
+			{
+				showBranding();
+			}
+		}
+
 	}
 }
 
@@ -193,7 +215,9 @@ System.onTitleChange (String newtitle)
 	if (newtitle == "" && getplayitemmetadatastring("title") == "" && !delayLoad.isRunning())
 	{
 		delayLoad.start();
+		loadFileInfo();
 	}
+
 	
 	// Get rid of buffering during stream connection & playback
 	if (StrLeft(newtitle, 1) == "[") {
@@ -208,6 +232,15 @@ System.onTitleChange (String newtitle)
 			return;
 		}
 	}
+	if (removePath(getPlayItemString()) == "demo.aac") // Show branding if playing 5.1 DJ Mike
+	{
+		if (getPlayitemmetadatastring("artist") == "DJ Mike Llama" && getplayitemmetadatastring("title") == "Llama Whippin' Experience")
+		{
+			showBranding();
+			return;
+		}
+	}
+
 
 	debugString(DEBUG_PREFIX "System.onTitleChange() -> loadFileInfo();", D_WTF);
 	refreshRating(System.getCurrentTrackRating());
@@ -355,6 +388,7 @@ loadFileInfo ()
 		}
 		else
 		{
+			
 			debugString(DEBUG_PREFIX "  songinfo_streamtitle: " + songinfo_streamtitle, D_WTF);
 			if (songinfo_streamtitle != "")
 			{
@@ -370,7 +404,7 @@ loadFileInfo ()
 					g_title.show();
 					n++;
 					cycle.addItem(g_title);
-
+			
 					// Artist 
 					if (n > 0) pos += 15;
 					if (songinfo_artist == "") t_artist.setText(s1);
@@ -505,7 +539,7 @@ loadFileInfo ()
 		l_webcover.hide();
 
 		string s = songinfo_title;
-		if (s == "") songinfo_displayTitle;
+
 		if (s != "")
 		{
 			t_title.setText(s);
@@ -1197,6 +1231,11 @@ showBranding()
 	g_sname.hide();
 	g_disc.hide();
 
+	// Rel@m: Added handling to the eq (called from mcv)
+	if (ic_eq.getData() == "1")
+	{
+		return;
+	}
 	if (ic_vis_fileinfo.getData() == "1")
 	{
 		_BrandingsetXSpace((g_cover.getGuiW() + 2) / 2);

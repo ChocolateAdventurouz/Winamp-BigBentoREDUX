@@ -27,6 +27,7 @@ AlbumArt.onRightButtonDown (int x, int y)
 	popupmenu p = new popupmenu;
 
 	p.addCommand("Refresh Album Art", 1, 0, 0);
+	p.addCommand("About...", 3, 0, 0);
 	String path = getPath(getPlayItemMetaDataString("filename"));
 	if(path != "")
 	{
@@ -55,6 +56,11 @@ AlbumArt.onRightButtonDown (int x, int y)
 			}
 		}
 	}
+	else if (result == 3)
+	{
+		messagebox("\n Original Developers/Designers: Martin Pöhlmann, Taber Buhl, Ben Allison \n Unofficial Maintainer: ChocolateAdventurouz aka Rel@m \n \n Whip the llama's ass ;)", "🦙 Big Bento Redux [Version 1.2.9]", 0, "🦙");
+		return;
+	}
 }
 
 AlbumArt.onLeftButtonDblClk (int x, int y)
@@ -73,3 +79,4 @@ AlbumArt.onLeftButtonDblClk (int x, int y)
 		}
 	}
 }
+

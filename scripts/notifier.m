@@ -73,10 +73,12 @@ Global Timer fallbackTempFix; //BUGFIX remove this
 // init
 // ------------------------------------------------------------------------------
 System.onScriptLoaded() {
+	showNotifier(fillCustomInfo("Skin Initalised!"));
 	initAttribs_notifier();
 	notifier_timer = new Timer;
 	fallbackTempFix = new Timer; //BUGFIX remove this
 	fallbackTempFix.setDelay(3000); //BUGFIX remove this / Time that onAlbumArtLoaded have to execute before bug mode is ON 
+	
 }
 
 // ------------------------------------------------------------------------------

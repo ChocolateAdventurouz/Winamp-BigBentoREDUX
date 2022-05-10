@@ -14,7 +14,6 @@ Internet:	www.skinconsortium.com
 
 #include <lib/std.mi>
 #include attribs/init_songticker.m
-
 Function setTextW();
 Function updateTickerScrolling();
 
@@ -23,15 +22,14 @@ Global GuiObject SongTicker;
 Global Text SongTime, InfoDisplay;
 Global int SongTicker_x, SongTicker_w, total_w;
 Global int SongTime_x, SongTime_w, offset_x;
-
 Global Boolean isShade, byPassTimer;
 
 System.onScriptLoaded ()
 {
 	initAttribs_Songticker();
 
+	Group mainnormal = getContainer("main").getLayout("normal");
 	group sg = getScriptGroup();
-
 	if (sg.getParentLayout().getID() == "shade") isShade = TRUE;
 
 	SongTicker = sg.findObject("songticker");
@@ -40,7 +38,19 @@ System.onScriptLoaded ()
 	SongTickerTimer.setDelay(3333);
 
 	SongTime = sg.findObject("SongTime");
+	
+	if (SongTicker == NULL) 
+	{
+		messagebox("The SongTicker object is not found. The skin will not run. Loading Winamp Classic...", "Error", 0, "");
+		switchSkin("Winamp Classic");
 
+	}
+
+	if (SongTime == NULL)
+	{
+		messagebox("The SongTime object is not found. The skin will not run. Loading Winamp Classic...", "Error", 0, "");
+		switchSkin("Winamp Classic");
+	} 
 	SongTicker_x = SongTicker.getGuiX();
 	SongTicker_w = SongTicker.getGuiW();
 
@@ -150,7 +160,7 @@ setTextW ()
 		return;
 	}
 
-	SongTicker_X = SongTime_X + SongTime_w + offset_x;
+	SongTicker_X = SongTime_x + SongTime_w + offset_x;
 	SongTicker_W = total_w - SongTicker_X;
 
 	/*if (!isShade)
