@@ -6,6 +6,7 @@
 
 </groupdef>
 
+
 <!-- Player:Component:PlayList -->
 
 <groupdef id="player.component.playlist.frame" wantfocus="1" rectrgn="1">
@@ -183,7 +184,7 @@
 
 <groupdef id="info.component.Cover">
 
-	<AlbumArt id="winamp.albumart" fitparent="1" move="0" rectrgn="1" notfoundImage="winamp.cover.notfound.84x84"/>
+	<AlbumArt id="winamp.albumart" fitparent="1" move="0" rectrgn="1" notfoundImage="winamp.cover.notfound"/>
 	<layer id="winamp.webalbumart" fitparent="1" move="0" image="winamp.cover.shoutcast" visible="0"/>
 	<script file="scripts/albumart.maki" param="winamp.albumart" />
 
@@ -618,7 +619,7 @@ link="sometext" displayed as hover tooltip
 	<Bento:InfoLine id="infodisplay.line.disc" x="0" y="0" w="0" relatw="1" h="15" visible="0" 
 		shift="-2" link="Click to Show More Information" label="Disc:"/>
 
-	<script file="scripts/fileinfo.maki" param="6" />
+	<script file="scripts/fileinfo.maki" param="5"/>
 
 </groupdef>
 
@@ -760,8 +761,12 @@ link="sometext" displayed as hover tooltip
 	<group id="info.component.plsidecar" x="2" y="2" h="99" w="-4" relatw="1" visible="0"/>
 
 	<layer id="branding" visible="0" move="0" ghost="1"
-		x="0" y="24" h="53" w="129"
+		x="0" y="24" h="47" w="198"
 		image="infocomp.branding"
+	/>
+	<layer id="branding.pro" visible="0" move="0" ghost="1"
+		x="-10" y="24" h="48" w="267"
+		image="infocomp.branding.pro"
 	/>
 
 	<group id="info.component.infodisplay" x="80" y="3" h="-19" relath="1" w="-143" relatw="1" />

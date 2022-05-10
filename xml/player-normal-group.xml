@@ -5,7 +5,7 @@
 	<animatedlayer id="beatvisleft" x="0" y="0" h="28" w="43" image="player.beatvis.left" move="0" autoplay="0" autoreplay="0" ghost="1" />
 	<animatedlayer id="beatvisright" x="44" y="0" h="28" w="43" image="player.beatvis.right" move="0" autoplay="0" autoreplay="0" ghost="1" />
 
-	<togglebutton fitparent="1" rectrgn="1" cfgattrib="{F1036C9C-3919-47ac-8494-366778CF10F9};Enable Beat Visualization" tooltip="Toggle Beat Visualization"/>
+	<togglebutton fitparent="1" rectrgn="1" cfgattrib="{F1036C9C-3919-47ac-8494-366778CF10F9};Enable Beat Visualization" />
 
 </groupdef>
 
@@ -32,21 +32,21 @@
 	/>
 
 	<text id="SongTime"
-		x="2" y="8" h="31" w="102"
+		x="7" y="8" h="31" w="102"
 		font="player.bitmapfont.nums" timecolonwidth="6"
 		display="time" align="left" alpha="220"
 	/>
 
 	<SongTicker id="Songticker" 
-		x="60" y="6" h="13" w="-60" relatw="1"
+		x="70" y="6" h="20" w="-72" relatw="1"
 		showlen="1" rightpadding="-3"
 		rightclickaction="trackmenu" dblclickaction="trackinfo" align="right"
-		color="color.display" size="13" valign="top" antialias="1" 
+		color="color.display" size="13" valign="top" antialias="0" 
 	/>
 	<Text id="InfoDisplay" 
 		x="70" y="6" h="20" w="-72" relatw="1" alpha="0"
 		display="SONGTITLE" showlen="1" offsetx="-3" align="right"
-		color="color.display" size="13" valign="top" antialias="1" ghost="1"
+		color="color.display" size="13" valign="top" antialias="0" ghost="1"
 	/>
 
 	<script file="scripts/songticker.maki" param="-7,big"/>
@@ -90,7 +90,6 @@
 		colorband14="136,150,155"
 		colorband15="140,154,159"
 		colorband16="145,159,164"
-		colorband17="145,159,164"
 		colorosc1="82,97,102"
 		colorosc2="83,97,104"
 		colorosc3="106,120,125"
@@ -120,7 +119,6 @@
 		colorband14="136,150,155"
 		colorband15="140,154,159"
 		colorband16="145,159,164"
-		colorband17="145,159,164"
 		colorosc1="82,97,102"
 		colorosc2="83,97,104"
 		colorosc3="106,120,125"
@@ -131,6 +129,7 @@
 		flipv="1"
 		mode="1"
 		gammagroup="DisplayText"
+		fps="60"
 	/>
 
 	<layer id="main.vis.trigger" x="11" y="42" h="28" w="108" rectrgn="1"/>
@@ -475,7 +474,7 @@
 		tooltip="Exit Winamp"
 	/>
 
-	<!--text id="gen.infotxt" relatx="1" size="11" bold="0" align="right" x="-270" y="5" w="173" text="Winamp Bento v0.9 #107" color="wasabi.titlebar.color" ghost="1" font="Arial" antialias="0"/-->
+	<!--<text id="gen.infotxt" relatx="1" size="11" bold="0" align="right" x="-270" y="5" w="173" text="Big Bento Redux" color="wasabi.titlebar.color" ghost="1" font="Arial" antialias="1"/>-->
 
 	<script file="scripts/mainmenu.maki" />
 

@@ -1,10 +1,157 @@
 <include file="player-normal-mcv.xml"/>
-
 <!-- SUI:Component:Browser -->
+
+<groupdef id="sui.component.browser" >
+
+	<Button id="browser.back"
+		x="4" h="26" w="21" y="2" rectrgn="1"
+		image="browser.button.back.normal"
+		hoverImage="browser.button.back.hover"
+		downImage="browser.button.back.down"
+		tooltip="Go Back"
+	/>
+	<Button id="browser.fwd"
+		x="25" h="26" w="21" y="2" rectrgn="1"
+		image="browser.button.forth.normal"
+		hoverImage="browser.button.forth.hover"
+		downImage="browser.button.forth.down"
+		tooltip="Go Forward"
+	/>
+	<Button id="browser.refresh"
+		x="46" h="26" w="21" y="2" rectrgn="1"
+		image="browser.button.reload.normal"
+		hoverImage="browser.button.reload.hover"
+		downImage="browser.button.reload.down"
+		tooltip="Reload Page"
+	/>
+	<Button id="browser.stop"
+		x="67" h="26" w="21" y="2" rectrgn="1"
+		image="browser.button.stop.normal"
+		hoverImage="browser.button.stop.hover"
+		downImage="browser.button.stop.down"
+		tooltip="Cancel Loading"
+	/>
+	<Button id="browser.home"
+		x="88" h="26" w="21" y="2" rectrgn="1"
+		image="browser.button.home.normal"
+		hoverImage="browser.button.home.hover"
+		downImage="browser.button.home.down"
+		tooltip="Home"
+	/>
+	<Button id="browser.links"
+		x="109" h="26" w="21" y="2" rectrgn="1"
+		image="browser.button.links.normal"
+		hoverImage="browser.button.links.hover"
+		downImage="browser.button.links.down"
+		tooltip="Quick Links"
+	/>
+	<group id="browser.navurl" x="134" y="3" h="22" w="-303" relatw="1" />
+
+	<group id="browser.search" x="-167" y="3" h="22" w="163" relatx="1" />
+
+	<Wasabi:Frame id="browser.dualwnd" x="1" y="29" w="-2" relath="1" h="-28" from="bottom" relatw="1" orientation="h" maxheight="-100" left="browser.itself" right="browser.scraper" minheight="18" height="100" jump="0"/>
+
+	<script file="scripts/browser.maki" param="\"/>
+
+</groupdef>
+
+<groupdef id="browser.itself">
+
+	<browser id="webbrowser" fitparent="1" url="http://forums.winamp.com" wantfocus="0"/>
+
+</groupdef>
+
+<groupdef id="browser.navurl">
+
+	<grid x="0" y="0" h="22" w="0" relatw="1"
+		left="browser.editframe.left"
+		middle="browser.editframe.center"
+		right="browser.editframe.right"
+	/>
+
+	<Wasabi:HistoryEditBox id="browser.hedit" x="4" h="18" w="-34" relatw="1" y="2" text="http://forums.winamp.com" navbuttons="0" wantfocus="0"/>
+	<Wasabi:Button id="browser.navigate" x="-27" relatx="1" h="18" w="23" y="2" image="browser.button.go.normal" center_image="1" tooltip="Go to This URL"/>
+
+</groupdef>
+
+<groupdef id="browser.search">
+
+	<grid x="0" y="0" h="22" w="0" relatw="1"
+		left="browser.editframe.left"
+		middle="browser.editframe.center"
+		right="browser.editframe.right"
+	/>
+
+	<Wasabi:Button id="search.choose" x="4" y="2" w="31" h="18"
+		tooltip="Choose Your Search Engine"
+		image="browser.button.search.winamp.normal" center_image="1" 
+		action="search" param="choose" action_target="webbrowser"
+	/>
+
+	<Wasabi:EditBox id="search.edit" x="35" y="2" relatw="1" w="-83" h="18" text=""/>
+	<Wasabi:Button id="search.go" x="-45" relatx="1" h="18" w="41" y="2"
+		image="browser.button.search.normal"
+		tooltip="Go Search"
+		center_image="1" action="search" param="go" action_target="webbrowser"
+	/>
+
+</groupdef>
+<groupdef id="browser.scraper">
+
+	<rect x="0" y="18" w="0" relath="1" h="-18" relatw="1" filled="1" color="color.display.bg" />
+
+	<Button id="browser.scraper.show" rectrgn="1"
+		x="-56" h="13" w="50" y="2" relatx="1"
+		image="browser.button.scraper.show.normal"
+		hoverImage="browser.button.scraper.show.hover"
+		downImage="browser.button.scraper.show.down"
+		tooltip="Show Media Monitor"
+	/>
+
+	<Button id="browser.scraper.hide" rectrgn="1"
+		x="-56" h="13" w="50" y="2" relatx="1"
+		image="browser.button.scraper.hide.normal"
+		hoverImage="browser.button.scraper.hide.hover"
+		downImage="browser.button.scraper.hide.down"
+		tooltip="Hide Media Monitor"
+	/>
+
+	<Button id="browser.scraper.play" rectrgn="1"
+		x="-267" h="13" w="38" y="2" relatx="1"
+		image="browser.button.scraper.play.normal"
+		hoverImage="browser.button.scraper.play.hover"
+		downImage="browser.button.scraper.play.down"
+		tooltip="Play selected Items"
+	/>
+
+	<Button id="browser.scraper.download" rectrgn="1"
+		x="-219" h="13" w="70" y="2" relatx="1"
+		image="browser.button.scraper.download.normal"
+		hoverImage="browser.button.scraper.download.hover"
+		downImage="browser.button.scraper.download.down"
+		tooltip="Download selected Items"
+	/>
+
+	<Button id="browser.scraper.rescan" rectrgn="1"
+		x="-139" h="13" w="58" y="2" relatx="1"
+		image="browser.button.scraper.rescan.normal"
+		hoverImage="browser.button.scraper.rescan.hover"
+		downImage="browser.button.scraper.rescan.down"
+		tooltip="Rescan Document"
+	/>
+
+	<layer x="14" y="2" move="0" image="browser.label.scraper"/>
+
+	<List x="0" w="0" y="19" h="-19" relatw="1" relath="1"
+		id="scraper.results"
+		multiselect="1" autodeselect="1" sort="0" focusonclick="1"
+		numcolumns="2" columnwidths="270;-1" columnlabels="File;URL" wa5style="1" 
+	/>
+</groupdef>
 
 <groupdef id="wdh.browser">
 
-	<Winamp:Browser x="0" y="1" h="-1" w="0" relatw="1" relath="1" id="sui.component.browser" download="0"/>
+	<group x="0" y="1" h="-1" w="0" relatw="1" relath="1" id="sui.component.browser" />
 
 </groupdef>
 
@@ -240,9 +387,17 @@
 
 </groupdef>
 
+
 <groupdef id="wdh.art">
-	<AlbumArt id="winamp.albumart" fitparent="1" move="0" rectrgn="1" notfoundImage="winamp.cover.notfound.xxl"/>
-	<layer id="winamp.webalbumart" fitparent="1" move="0" image="winamp.cover.shoutcast" visible="0"/>
+	<AlbumArt id="winamp.albumart" move="1" fitparent="1" rectrgn="1" autofocus="1" wantfocus="1" notfoundImage="winamp.cover.notfound.xxl"/>
+	<layer x="2" y="-28" w="-4" h="-26" relatw="1" relath="1" image="window.background.gradient" move="0" ghost="1"/>
+	<text id="CoverPlaying.Title"
+		x="0" y="0" w="1000000" h="15" visible="1"
+		font="Arial" fontsize="14"
+		display="text" align="left" shift="-2" antialias="1"
+	/>
+	<text id="gen.infotxt" relatx="1" size="11" bold="0" valign="bottom" x="-270" y="5" w="173" text="⭐CoverPlaying - Version 1.121" color="wasabi.titlebar.color" ghost="1" font="Arial" antialias="1"/>
+	<script file="scripts/coverplaying.maki"/>
 	<script file="scripts/albumart.maki" param="winamp.albumart"/>
 </groupdef>
 
@@ -362,8 +517,9 @@ the object itself is a button.
 	<Bento:TabButton
 		id="switch.art"
 		x="321" h="23" w="83" y="7"
-		tabtext="Cover Art"
+		tabtext="⭐CoverPlaying"
 	/>
+	
 	<script file="scripts/tabcontrol.maki" param="@HAVE_LIBRARY@"/>
 
 	<group id="sui.components" x="1" y="29" h="-32" w="-2" relatw="1" relath="1"/>

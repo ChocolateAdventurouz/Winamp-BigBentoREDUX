@@ -757,616 +757,206 @@
     <gammagroup id="NotifierUpperText" value="-2997,620,-337" gray="0" boost="0" />
     <gammagroup id="Frame_Borders" value="829,-192,-804" gray="0" boost="0" />
 </gammaset>
-
-
-<!-- Community Presets -->
-
-<!-- Theme(s) by QOAL: -->
-
-<gammaset id="Evil Red">
-  <gammagroup id="Titlebar" value="-3072,-3072,-3072" gray="2" boost="0" />
-  <gammagroup id="TitlebarText" value="-512,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="TitlebarMenuText" value="-512,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="TitleButtonOrange" value="-512,-4096,-4096" gray="2" boost="0" />
-  <gammagroup id="TitleButtonGrey" value="-2048,-2048,-2048" gray="2" boost="0" />
-  <gammagroup id="WindowBackground" value="-3328,-3328,-3328" gray="2" boost="0" />
-  <gammagroup id="WindowText" value="-512,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="Column Text" value="-1024,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="DisplayText" value="0,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="ScrollbarTrack" value="-2048,-2048,-2048" gray="2" boost="0" />
-  <gammagroup id="PlayerDisplay" value="-4096,-4096,-4096" gray="2" boost="0" />
-  <gammagroup id="PlayerDisplayGradient" value="-4096,-4096,-4096" gray="2" boost="0" />
-  <gammagroup id="ComponentFrame" value="-3072,-3072,-3072" gray="2" boost="0" />
-  <gammagroup id="PlayerButton" value="-2560,-2560,-2560" gray="0" boost="0" />
-  <gammagroup id="PlayerShadeSlider" value="-2560,-2560,-2560" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonPlaceHolder" value="-3072,-3072,-3072" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonGlow" value="4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonActive" value="512,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="PlayerSliderLight" value="0,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="PlayerSliderBackground" value="-3072,-3072,-3072" gray="0" boost="0" />
-  <gammagroup id="WindowBackgroundGradient" value="-3328,-3328,-3328" gray="2" boost="0" />
-  <gammagroup id="CompButtonInactive" value="-3072,-3072,-3072" gray="2" boost="0" />
-  <gammagroup id="CompButtonActive" value="-3072,-3072,-3072" gray="2" boost="0" />
-  <gammagroup id="CompButtonInactiveText" value="-1024,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="CompButtonActiveText" value="-512,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="SelectionBg" value="1024,-4096,-4096" gray="2" boost="0" />
-  <gammagroup id="SelectionBg Inactive" value="1024,-4096,-4096" gray="2" boost="0" />
-  <gammagroup id="Selection" value="0,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="LightningBolt" value="0,-4096,-4096" gray="2" boost="0" />
-  <gammagroup id="Column" value="-3328,-3328,-3328" gray="2" boost="0" />
-  <gammagroup id="ShadeButton" value="0,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="NotifierBackground" value="-3328,-3328,-3328" gray="0" boost="0" />
-  <gammagroup id="NotifierText" value="-2048,-4096,-4096" gray="0" boost="0" />
+<gammaset id="Unpopularpizza | BlackGreen">
+  <gammagroup id="Titlebar" value="-2700,-2700,-2700" gray="0" boost="0" />
+  <gammagroup id="TitlebarText" value="-1000,-1000,-1000" gray="0" boost="0" />
+  <gammagroup id="TitlebarMenuText" valinue="-1522,-1522,-1522" gray="0" boost="0" />
+  <gammagroup id="TitleButtonOrange" value="-100,-100,-100" gray="0" boost="0" />
+  <gammagroup id="TitleButtonGrey" value="-1522,-1522,-1522" gray="0" boost="0" />
+  <gammagroup id="WindowBackground" value="-2800,-2800,-2800" gray="0" boost="0" />
+  <gammagroup id="WindowText" value="-1000,-1000,-1000" gray="0" boost="1" />
+  <gammagroup id="Column Text" value="-400,-400,-400" gray="0" boost="1" />
+  <gammagroup id="DisplayText" value="-400,-400,-400" gray="0" boost="1" />
+  <gammagroup id="ScrollbarTrack" value="-2779,-2779,-2779" gray="0" boost="0" />
+  <gammagroup id="PlayerDisplay" value="-2727,-2727,-2727" gray="0" boost="0" />
+  <gammagroup id="PlayerDisplayGradient" value="-3729,-3729,-3729" gray="0" boost="0" />
+  <gammagroup id="ComponentFrame" value="-2800,-2800,-2800" gray="0" boost="0" />
+  <gammagroup id="PlayerButton" value="-2522,-2522,-2522" gray="0" boost="0" />
+  <gammagroup id="PlayerShadeSlider" value="-50,-50,-50" gray="0" boost="0" />
+  <gammagroup id="PlayerButtonPlaceHolder" value="-200,-200,-200" gray="0" boost="0" />
+  <gammagroup id="PlayerButtonGlow" value="1,2000,1" gray="0" boost="1" />
+  <gammagroup id="PlayerButtonActive" value="-4000,1,-4000" gray="0" boost="0" />
+  <gammagroup id="PlayerSliderLight" value="-4000,1,-4000" gray="0" boost="0" />
+  <gammagroup id="PlayerSliderBackground" value="-2960,-2960,-2960" gray="0" boost="1" />
+  <gammagroup id="WindowBackgroundGradient" value="-3000,-3000,-3000" gray="0" boost="0" />
+  <gammagroup id="CompButtonInactive" value="-2022,-2022,-2022" gray="0" boost="0" />
+  <gammagroup id="CompButtonActive" value="-1522,-1522,-1522" gray="0" boost="0" />
+  <gammagroup id="CompButtonInactiveText" value="-1600,-1600,-1600" gray="0" boost="0" />
+  <gammagroup id="CompButtonActiveText" value="-4000,1,-4000" gray="0" boost="0" />
+  <gammagroup id="SelectionBg" value="-3000,-3000,-3000" gray="0" boost="0" />
+  <gammagroup id="SelectionBg Inactive" value="-2800,-2800,-2800" gray="0" boost="0" />
+  <gammagroup id="Selection" value="-4000,1,-4000" gray="2" boost="0" />
+  <gammagroup id="LightningBolt" value="-2000,-2000,-2000" gray="2" boost="0" />
+  <gammagroup id="Column" value="-2822,-2822,-2822" gray="0" boost="0" />
+  <gammagroup id="ShadeButton" value="50,50,50" gray="0" boost="0" />
+  <gammagroup id="NotifierBackground" value="-3600,-3600,-3600" gray="0" boost="0" />
+  <gammagroup id="NotifierText" value="-4000,1,-4000" gray="1" boost="0" />
   <gammagroup id="NotifierTextShadow" value="-4096,-4096,-4096" gray="0" boost="0" />
   <gammagroup id="NotifierUpperTextShadow" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="NotifierUpperText" value="0,-4096,-4065" gray="0" boost="1" />
-  <gammagroup id="Frame_Borders" value="-4096,-4096,-4096" gray="2" boost="0" />
+  <gammagroup id="NotifierUpperText" value="0,0,0" gray="0" boost="1" />
+  <gammagroup id="Frame_Borders" value="-2800,-2800,-2800" gray="0" boost="0" />
+  <gammagroup id="Spectrum_Analyzer" value="1,-4000,-4000" gray="0" boost="0" />
 </gammaset>
 
-<!-- Themes by J_Darnley -->
-
-<gammaset id="Winamp Modern | City Night">
-  <gammagroup id="Titlebar" value="-1024,-1024,-1024" gray="2" boost="0" />
-  <gammagroup id="TitlebarText" value="0,0,0" gray="2" boost="1" />
-  <gammagroup id="TitlebarMenuText" value="0,0,0" gray="2" boost="1" />
-  <gammagroup id="TitleButtonOrange" value="2048,2048,2048" gray="2" boost="0" />
-  <gammagroup id="TitleButtonGrey" value="2048,2048,2048" gray="2" boost="0" />
-  <gammagroup id="WindowBackground" value="-1536,-1536,-1536" gray="2" boost="0" />
-  <gammagroup id="WindowText" value="1024,1024,1024" gray="2" boost="0" />
-  <gammagroup id="Column Text" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="DisplayText" value="1024,1024,1024" gray="2" boost="0" />
-  <gammagroup id="ScrollbarTrack" value="1024,1024,1024" gray="2" boost="1" />
-  <gammagroup id="PlayerDisplay" value="-2560,-2560,-2560" gray="0" boost="1" />
-  <gammagroup id="PlayerDisplayGradient" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="ComponentFrame" value="-2048,-2048,-2048" gray="0" boost="1" />
-  <gammagroup id="PlayerButton" value="1024,1024,1024" gray="2" boost="0" />
-  <gammagroup id="PlayerShadeSlider" value="1536,1536,1536" gray="2" boost="0" />
-  <gammagroup id="PlayerButtonPlaceHolder" value="1024,1024,1024" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonGlow" value="0,-511,-2260" gray="2" boost="1" />
-  <gammagroup id="PlayerButtonActive" value="0,-511,-2260" gray="2" boost="1" />
-  <gammagroup id="PlayerSliderLight" value="1559,451,-2318" gray="0" boost="1" />
-  <gammagroup id="PlayerSliderBackground" value="1559,451,-2318" gray="0" boost="1" />
-  <gammagroup id="WindowBackgroundGradient" value="-4096,-4096,-4096" gray="2" boost="0" />
-  <gammagroup id="CompButtonInactive" value="2048,2048,1536" gray="0" boost="0" />
-  <gammagroup id="CompButtonActive" value="2048,2048,1536" gray="0" boost="0" />
-  <gammagroup id="CompButtonInactiveText" value="-512,-512,-512" gray="0" boost="0" />
-  <gammagroup id="CompButtonActiveText" value="0,-511,-2260" gray="0" boost="0" />
-  <gammagroup id="SelectionBg" value="-3072,-3072,-3072" gray="0" boost="1" />
-  <gammagroup id="SelectionBg Inactive" value="-3072,-3072,-3072" gray="0" boost="1" />
-  <gammagroup id="Selection" value="860,0,-3264" gray="0" boost="0" />
-  <gammagroup id="LightningBolt" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Column" value="-2048,-2048,-2048" gray="0" boost="1" />
-  <gammagroup id="ShadeButton" value="2048,2048,2048" gray="2" boost="0" />
-  <gammagroup id="NotifierBackground" value="-1024,-1024,-1024" gray="0" boost="0" />
-  <gammagroup id="NotifierText" value="4096,4096,4096" gray="0" boost="1" />
-  <gammagroup id="NotifierTextShadow" value="-4096,-4096,-4096" gray="0" boost="1" />
-  <gammagroup id="NotifierUpperTextShadow" value="-4096,-4096,-4096" gray="0" boost="1" />
-  <gammagroup id="NotifierUpperText" value="4096,4096,4096" gray="0" boost="1" />
-  <gammagroup id="Frame_Borders" value="1024,1024,1024" gray="0" boost="1" />
+<gammaset id="Dustin | BlackYellow">
+  <gammagroup id="Titlebar" value="-2700,-2700,-2700" gray="0" boost="0" />
+  <gammagroup id="TitlebarText" value="-1000,-1000,-1000" gray="0" boost="0" />
+  <gammagroup id="TitlebarMenuText" valinue="-1522,-1522,-1522" gray="0" boost="0" />
+  <gammagroup id="TitleButtonOrange" value="-100,-100,-100" gray="0" boost="0" />
+  <gammagroup id="TitleButtonGrey" value="-1522,-1522,-1522" gray="0" boost="0" />
+  <gammagroup id="WindowBackground" value="-2800,-2800,-2800" gray="0" boost="0" />
+  <gammagroup id="WindowText" value="-1000,-1000,-1000" gray="0" boost="1" />
+  <gammagroup id="Column Text" value="2096,2096,2096" gray="0" boost="0" />
+  <gammagroup id="DisplayText" value="-400,-400,-400" gray="0" boost="1" />
+  <gammagroup id="ScrollbarTrack" value="-2779,-2779,-2779" gray="0" boost="0" />
+  <gammagroup id="PlayerDisplay" value="-2727,-2727,-2727" gray="0" boost="0" />
+  <gammagroup id="PlayerDisplayGradient" value="-3729,-3729,-3729" gray="0" boost="0" />
+  <gammagroup id="ComponentFrame" value="-2800,-2800,-2800" gray="0" boost="0" />
+  <gammagroup id="PlayerButton" value="-2522,-2522,-2522" gray="0" boost="0" />
+  <gammagroup id="PlayerShadeSlider" value="-50,-50,-50" gray="0" boost="0" />
+  <gammagroup id="PlayerButtonPlaceHolder" value="-200,-200,-200" gray="0" boost="0" />
+  <gammagroup id="PlayerButtonGlow" value="4000,4000,-2000" gray="0" boost="1" />
+  <gammagroup id="PlayerButtonActive" value="-1000,-1000,-1000" gray="0" boost="0" />
+  <gammagroup id="PlayerSliderLight" value="2000,2000,-2000" gray="0" boost="0" />
+  <gammagroup id="PlayerSliderBackground" value="-2960,-2960,-2960" gray="0" boost="1" />
+  <gammagroup id="WindowBackgroundGradient" value="-3000,-3000,-3000" gray="0" boost="1" />
+  <gammagroup id="CompButtonInactive" value="-2022,-2022,-2022" gray="0" boost="0" />
+  <gammagroup id="CompButtonActive" value="-1522,-1522,-1522" gray="0" boost="0" />
+  <gammagroup id="CompButtonInactiveText" value="-1600,-1600,-1600" gray="0" boost="0" />
+  <gammagroup id="CompButtonActiveText" value="3000,3000,-2000" gray="0" boost="0" />
+  <gammagroup id="SelectionBg" value="-3000,-3000,-3000" gray="0" boost="0" />
+  <gammagroup id="SelectionBg Inactive" value="-2800,-2800,-2800" gray="0" boost="0" />
+  <gammagroup id="Selection" value="4000,4000,-2000" gray="0" boost="0" />
+  <gammagroup id="LightningBolt" value="5000,5000,1255" gray="0" boost="0" />
+  <gammagroup id="Column" value="-2822,-2822,-2822" gray="0" boost="0" />
+  <gammagroup id="ShadeButton" value="50,50,50" gray="0" boost="0" />
+  <gammagroup id="NotifierBackground" value="-3600,-3600,-3600" gray="0" boost="0" />
+  <gammagroup id="NotifierText" value="-352,-218,0" gray="1" boost="0" />
+  <gammagroup id="NotifierTextShadow" value="-4096,-4096,-4096" gray="0" boost="0" />
+  <gammagroup id="NotifierUpperTextShadow" value="-4096,-4096,-4096" gray="0" boost="0" />
+  <gammagroup id="NotifierUpperText" value="0,0,0" gray="0" boost="1" />
+  <gammagroup id="Frame_Borders" value="-1656,-1656,-1656" gray="0" boost="1" />
 </gammaset>
-
-<!-- Theme(s) by VooDoo` -->
-
-<gammaset id="Blue Steel"> 
-  <gammagroup id="Titlebar" value="886,1354,1755" gray="1" boost="0" /> 
-  <gammagroup id="TitlebarText" value="-485,-452,-418" gray="0" boost="0" /> 
-  <gammagroup id="TitlebarMenuText" value="-485,-452,-418" gray="0" boost="0" /> 
-  <gammagroup id="TitleButtonOrange" value="250,-1254,-385" gray="0" boost="0" /> 
-  <gammagroup id="TitleButtonGrey" value="886,1354,1755" gray="1" boost="0" /> 
-  <gammagroup id="WindowBackground" value="2624,2524,2624" gray="0" boost="0" /> 
-  <gammagroup id="WindowText" value="411,1716,4096" gray="0" boost="0" /> 
-  <gammagroup id="Column Text" value="411,1716,4096" gray="0" boost="0" /> 
-  <gammagroup id="DisplayText" value="251,663,2457" gray="0" boost="0" /> 
-  <gammagroup id="ScrollbarTrack" value="-3753,-3273,-2701" gray="0" boost="1" /> 
-  <gammagroup id="PlayerDisplay" value="-3433,-2907,-2266" gray="0" boost="1" /> 
-  <gammagroup id="PlayerDisplayGradient" value="0,0,0" gray="0" boost="0" /> 
-  <gammagroup id="ComponentFrame" value="-1254,-519,1019" gray="1" boost="0" /> 
-  <gammagroup id="PlayerButton" value="886,1354,1822" gray="0" boost="0" /> 
-  <gammagroup id="PlayerShadeSlider" value="886,1354,1822" gray="0" boost="0" /> 
-  <gammagroup id="PlayerButtonPlaceHolder" value="-552,-552,-552" gray="0" boost="0" /> 
-  <gammagroup id="PlayerButtonGlow" value="-418,652,2457" gray="0" boost="0" /> 
-  <gammagroup id="PlayerButtonActive" value="3020,3020,3020" gray="0" boost="0" /> 
-  <gammagroup id="PlayerSliderLight" value="-418,652,2457" gray="0" boost="0" /> 
-  <gammagroup id="PlayerSliderBackground" value="-418,652,2457" gray="0" boost="0" /> 
-  <gammagroup id="WindowBackgroundGradient" value="2624,2524,2624" gray="0" boost="0" /> 
-  <gammagroup id="CompButtonInactive" value="-1254,-519,1019" gray="1" boost="0" /> 
-  <gammagroup id="CompButtonActive" value="-1254,-519,1019" gray="1" boost="0" /> 
-  <gammagroup id="CompButtonInactiveText" value="-2525,-1923,-1221" gray="0" boost="0" /> 
-  <gammagroup id="CompButtonActiveText" value="-1555,-318,2562" gray="0" boost="0" /> 
-  <gammagroup id="SelectionBg" value="1053,1716,2591" gray="0" boost="0" /> 
-  <gammagroup id="SelectionBg Inactive" value="-664,297,892" gray="0" boost="0" /> 
-  <gammagroup id="Selection" value="1788,2491,4096" gray="0" boost="0" /> 
-  <gammagroup id="LightningBolt" value="886,1354,1822" gray="0" boost="0" /> 
-  <gammagroup id="Column" value="-519,0,718" gray="0" boost="0" /> 
-  <gammagroup id="ShadeButton" value="886,1354,1822" gray="0" boost="0" /> 
-  <gammagroup id="NotifierBackground" value="-318,0,451" gray="0" boost="0" /> 
-  <gammagroup id="NotifierText" value="251,663,2457" gray="0" boost="0" /> 
-  <gammagroup id="NotifierTextShadow" value="-4096,-4096,-4096" gray="0" boost="1" /> 
-  <gammagroup id="NotifierUpperTextShadow" value="4096,4096,4096" gray="0" boost="0" /> 
-  <gammagroup id="NotifierUpperText" value="411,1716,4096" gray="0" boost="0" /> 
-  <gammagroup id="Frame_Borders" value="-2586,-2174,-1282" gray="0" boost="1" /> 
-</gammaset>
-
-<gammaset id="Winamp Modern | Varsity"> 
-  <gammagroup id="Titlebar" value="-653,-653,-1121" gray="1" boost="0" /> 
-  <gammagroup id="TitlebarText" value="-653,-653,-1121" gray="1" boost="0" /> 
-  <gammagroup id="TitlebarMenuText" value="-653,-653,-1121" gray="1" boost="0" /> 
-  <gammagroup id="TitleButtonOrange" value="-653,-653,-1121" gray="1" boost="0" /> 
-  <gammagroup id="TitleButtonGrey" value="-653,-653,-1121" gray="1" boost="0" /> 
-  <gammagroup id="WindowBackground" value="2591,-3294,-3127" gray="1" boost="0" /> 
-  <gammagroup id="WindowText" value="4096,4096,778" gray="0" boost="0" /> 
-  <gammagroup id="Column Text" value="-550,-3845,-3845" gray="0" boost="0" /> 
-  <gammagroup id="DisplayText" value="4096,3193,778" gray="0" boost="0" /> 
-  <gammagroup id="ScrollbarTrack" value="3523,3203,2837" gray="0" boost="1" /> 
-  <gammagroup id="PlayerDisplay" value="-984,-1053,-1488" gray="0" boost="1" /> 
-  <gammagroup id="PlayerDisplayGradient" value="-847,-3707,-3639" gray="0" boost="1" /> 
-  <gammagroup id="ComponentFrame" value="297,137,-138" gray="0" boost="1" /> 
-  <gammagroup id="PlayerButton" value="919,886,919" gray="0" boost="0" /> 
-  <gammagroup id="PlayerShadeSlider" value="919,886,919" gray="0" boost="0" /> 
-  <gammagroup id="PlayerButtonPlaceHolder" value="-151,-920,-820" gray="0" boost="0" /> 
-  <gammagroup id="PlayerButtonGlow" value="2539,2105,1739" gray="0" boost="0" /> 
-  <gammagroup id="PlayerButtonActive" value="4096,0,-4096" gray="0" boost="0" /> 
-  <gammagroup id="PlayerSliderLight" value="819,819,819" gray="0" boost="0" /> 
-  <gammagroup id="PlayerSliderBackground" value="1554,-3090,-2907" gray="1" boost="0" /> 
-  <gammagroup id="WindowBackgroundGradient" value="-987,-3562,-3528" gray="0" boost="1" /> 
-  <gammagroup id="CompButtonInactive" value="2791,-2266,-2426" gray="1" boost="0" /> 
-  <gammagroup id="CompButtonActive" value="297,137,-138" gray="0" boost="1" /> 
-  <gammagroup id="CompButtonInactiveText" value="-1555,-2458,-2458" gray="0" boost="0" /> 
-  <gammagroup id="CompButtonActiveText" value="-2266,-4096,-4096" gray="0" boost="0" /> 
-  <gammagroup id="SelectionBg" value="366,205,-527" gray="0" boost="1" /> 
-  <gammagroup id="SelectionBg Inactive" value="-1168,-1259,-1740" gray="0" boost="1" /> 
-  <gammagroup id="Selection" value="4096,0,-4096" gray="0" boost="0" /> 
-  <gammagroup id="LightningBolt" value="919,886,919" gray="0" boost="0" /> 
-  <gammagroup id="Column" value="1521,1287,1019" gray="0" boost="1" /> 
-  <gammagroup id="ShadeButton" value="919,886,919" gray="0" boost="0" /> 
-  <gammagroup id="NotifierBackground" value="919,886,919" gray="0" boost="0" /> 
-  <gammagroup id="NotifierText" value="-4096,-4096,-4096" gray="0" boost="0" /> 
-  <gammagroup id="NotifierTextShadow" value="919,919,919" gray="0" boost="1" /> 
-  <gammagroup id="NotifierUpperTextShadow" value="0,0,0" gray="0" boost="0" /> 
-  <gammagroup id="NotifierUpperText" value="-504,-3456,-3387" gray="0" boost="1" /> 
-  <gammagroup id="Frame_Borders" value="-962,-1030,-1488" gray="0" boost="1" /> 
-</gammaset>
-
-<gammaset id="Winamp Modern | City Night 2"> 
-  <gammagroup id="Titlebar" value="-1522,-1522,-1522" gray="1" boost="0" /> 
-  <gammagroup id="TitlebarText" value="-1522,-1522,-1522" gray="1" boost="0" /> 
-  <gammagroup id="TitlebarMenuText" value="-1522,-1522,-1522" gray="1" boost="0" /> 
-  <gammagroup id="TitleButtonOrange" value="284,284,284" gray="2" boost="0" /> 
-  <gammagroup id="TitleButtonGrey" value="-1522,-1522,-1522" gray="1" boost="0" /> 
-  <gammagroup id="WindowBackground" value="886,1120,1454" gray="1" boost="0" /> 
-  <gammagroup id="WindowText" value="4096,4096,4096" gray="0" boost="0" /> 
-  <gammagroup id="Column Text" value="4096,4096,4096" gray="0" boost="0" /> 
-  <gammagroup id="DisplayText" value="-352,-218,0" gray="1" boost="0" /> 
-  <gammagroup id="ScrollbarTrack" value="852,852,852" gray="0" boost="1" /> 
-  <gammagroup id="PlayerDisplay" value="-3327,-3327,-3327" gray="0" boost="1" /> 
-  <gammagroup id="PlayerDisplayGradient" value="-3729,-3762,-3829" gray="0" boost="1" /> 
-  <gammagroup id="ComponentFrame" value="2758,2557,3260" gray="0" boost="0" /> 
-  <gammagroup id="PlayerButton" value="50,50,50" gray="0" boost="0" /> 
-  <gammagroup id="PlayerShadeSlider" value="50,50,50" gray="0" boost="0" /> 
-  <gammagroup id="PlayerButtonPlaceHolder" value="-552,-452,-385" gray="0" boost="0" /> 
-  <gammagroup id="PlayerButtonGlow" value="4096,2457,-1522" gray="1" boost="0" /> 
-  <gammagroup id="PlayerButtonActive" value="4096,2457,-1522" gray="2" boost="0" /> 
-  <gammagroup id="PlayerSliderLight" value="3494,1253,-1990" gray="1" boost="0" /> 
-  <gammagroup id="PlayerSliderBackground" value="-2960,-2859,-2792" gray="1" boost="1" /> 
-  <gammagroup id="WindowBackgroundGradient" value="886,1120,1454" gray="1" boost="0" /> 
-  <gammagroup id="CompButtonInactive" value="0,-184,250" gray="0" boost="0" /> 
-  <gammagroup id="CompButtonActive" value="2758,2557,3260" gray="0" boost="0" /> 
-  <gammagroup id="CompButtonInactiveText" value="-1656,-1555,-1254" gray="0" boost="0" /> 
-  <gammagroup id="CompButtonActiveText" value="986,0,-2859" gray="1" boost="0" /> 
-  <gammagroup id="SelectionBg" value="-2659,-2659,-2759" gray="0" boost="1" /> 
-  <gammagroup id="SelectionBg Inactive" value="-3127,-3093,-3194" gray="0" boost="1" /> 
-  <gammagroup id="Selection" value="4096,-65,-2458" gray="1" boost="1" /> 
-  <gammagroup id="LightningBolt" value="852,852,852" gray="0" boost="0" /> 
-  <gammagroup id="Column" value="-653,-653,-485" gray="0" boost="1" /> 
-  <gammagroup id="ShadeButton" value="50,50,50" gray="0" boost="0" /> 
-  <gammagroup id="NotifierBackground" value="-619,-619,-619" gray="1" boost="0" /> 
-  <gammagroup id="NotifierText" value="-352,-218,0" gray="1" boost="0" /> 
-  <gammagroup id="NotifierTextShadow" value="-4096,-4096,-4096" gray="1" boost="0" /> 
-  <gammagroup id="NotifierUpperTextShadow" value="-4096,-4096,-4096" gray="0" boost="0" /> 
-  <gammagroup id="NotifierUpperText" value="4096,2457,-1522" gray="1" boost="1" /> 
-  <gammagroup id="Frame_Borders" value="-1656,-1555,-1254" gray="0" boost="1" /> 
-</gammaset>
-
-<gammaset id="Royal Blue"> 
-  <gammagroup id="Titlebar" value="-385,551,2624" gray="0" boost="0" /> 
-  <gammagroup id="TitlebarText" value="-1488,-753,1721" gray="0" boost="0" /> 
-  <gammagroup id="TitlebarMenuText" value="-1488,-753,1721" gray="0" boost="0" /> 
-  <gammagroup id="TitleButtonOrange" value="250,-1254,-385" gray="0" boost="0" /> 
-  <gammagroup id="TitleButtonGrey" value="-385,551,2624" gray="0" boost="0" /> 
-  <gammagroup id="WindowBackground" value="-385,551,2624" gray="0" boost="0" /> 
-  <gammagroup id="WindowText" value="411,1716,4096" gray="0" boost="0" /> 
-  <gammagroup id="Column Text" value="411,1716,4096" gray="0" boost="0" /> 
-  <gammagroup id="DisplayText" value="-481,0,2585" gray="0" boost="0" /> 
-  <gammagroup id="ScrollbarTrack" value="411,1716,4096" gray="0" boost="0" /> 
-  <gammagroup id="PlayerDisplay" value="0,0,0" gray="0" boost="0" /> 
-  <gammagroup id="PlayerDisplayGradient" value="0,0,0" gray="0" boost="0" /> 
-  <gammagroup id="ComponentFrame" value="-1221,-452,986" gray="0" boost="0" /> 
-  <gammagroup id="PlayerButton" value="-385,551,2624" gray="0" boost="0" /> 
-  <gammagroup id="PlayerShadeSlider" value="-385,551,2624" gray="0" boost="0" /> 
-  <gammagroup id="PlayerButtonPlaceHolder" value="-1756,-719,986" gray="0" boost="0" /> 
-  <gammagroup id="PlayerButtonGlow" value="-385,551,2624" gray="0" boost="0" /> 
-  <gammagroup id="PlayerButtonActive" value="411,1716,4096" gray="0" boost="0" /> 
-  <gammagroup id="PlayerSliderLight" value="-385,551,2624" gray="0" boost="0" /> 
-  <gammagroup id="PlayerSliderBackground" value="-385,551,2624" gray="0" boost="0" /> 
-  <gammagroup id="WindowBackgroundGradient" value="-385,551,2624" gray="0" boost="0" /> 
-  <gammagroup id="CompButtonInactive" value="-1254,-519,1019" gray="1" boost="0" /> 
-  <gammagroup id="CompButtonActive" value="-1254,-519,1019" gray="1" boost="0" /> 
-  <gammagroup id="CompButtonInactiveText" value="-2090,-552,2022" gray="0" boost="0" /> 
-  <gammagroup id="CompButtonActiveText" value="-1282,0,2562" gray="0" boost="0" /> 
-  <gammagroup id="SelectionBg" value="411,1716,4096" gray="0" boost="0" /> 
-  <gammagroup id="SelectionBg Inactive" value="-664,297,892" gray="0" boost="0" /> 
-  <gammagroup id="Selection" value="411,1716,4096" gray="0" boost="0" /> 
-  <gammagroup id="LightningBolt" value="-385,551,2624" gray="0" boost="0" /> 
-  <gammagroup id="Column" value="-887,0,1755" gray="0" boost="0" /> 
-  <gammagroup id="ShadeButton" value="-385,551,2624" gray="0" boost="0" /> 
-  <gammagroup id="NotifierBackground" value="-385,551,2624" gray="0" boost="0" /> 
-  <gammagroup id="NotifierText" value="-4096,-4096,-4096" gray="0" boost="0" /> 
-  <gammagroup id="NotifierTextShadow" value="-151,919,2123" gray="0" boost="1" /> 
-  <gammagroup id="NotifierUpperTextShadow" value="411,1716,4096" gray="0" boost="1" /> 
-  <gammagroup id="NotifierUpperText" value="-4096,-4096,-4096" gray="0" boost="0" /> 
-  <gammagroup id="Frame_Borders" value="-2586,-2174,-1282" gray="0" boost="1" /> 
-</gammaset> 
-
-<gammaset id="Royal Black"> 
-  <gammagroup id="Titlebar" value="-1488,-1488,-1488" gray="2" boost="0" /> 
-  <gammagroup id="TitlebarText" value="-1288,-1288,-1288" gray="0" boost="0" /> 
-  <gammagroup id="TitlebarMenuText" value="-1288,-1288,-1288" gray="0" boost="0" /> 
-  <gammagroup id="TitleButtonOrange" value="250,-1254,-385" gray="0" boost="0" /> 
-  <gammagroup id="TitleButtonGrey" value="-1488,-1488,-1488" gray="2" boost="0" /> 
-  <gammagroup id="WindowBackground" value="1601,1601,1601" gray="0" boost="0" /> 
-  <gammagroup id="WindowText" value="0,0,0" gray="0" boost="0" /> 
-  <gammagroup id="Column Text" value="0,0,0" gray="0" boost="0" /> 
-  <gammagroup id="DisplayText" value="0,0,0" gray="0" boost="0" /> 
-  <gammagroup id="ScrollbarTrack" value="0,0,0" gray="0" boost="0" /> 
-  <gammagroup id="PlayerDisplay" value="0,0,0" gray="0" boost="0" /> 
-  <gammagroup id="PlayerDisplayGradient" value="0,0,0" gray="0" boost="0" /> 
-  <gammagroup id="ComponentFrame" value="-920,-920,-920" gray="0" boost="0" /> 
-  <gammagroup id="PlayerButton" value="-619,-251,351" gray="0" boost="0" /> 
-  <gammagroup id="PlayerShadeSlider" value="-619,-251,351" gray="0" boost="0" /> 
-  <gammagroup id="PlayerButtonPlaceHolder" value="-1221,-1221,-1221" gray="0" boost="0" /> 
-  <gammagroup id="PlayerButtonGlow" value="0,0,0" gray="0" boost="0" /> 
-  <gammagroup id="PlayerButtonActive" value="1601,2256,2825" gray="2" boost="0" /> 
-  <gammagroup id="PlayerSliderLight" value="0,0,0" gray="0" boost="0" /> 
-  <gammagroup id="PlayerSliderBackground" value="-953,-953,-987" gray="0" boost="0" /> 
-  <gammagroup id="WindowBackgroundGradient" value="518,518,551" gray="0" boost="0" /> 
-  <gammagroup id="CompButtonInactive" value="-1388,-1388,-1388" gray="0" boost="0" /> 
-  <gammagroup id="CompButtonActive" value="-920,-920,-920" gray="0" boost="0" /> 
-  <gammagroup id="CompButtonInactiveText" value="-1522,-1522,-1522" gray="0" boost="0" /> 
-  <gammagroup id="CompButtonActiveText" value="0,0,0" gray="0" boost="0" /> 
-  <gammagroup id="SelectionBg" value="0,0,0" gray="0" boost="0" /> 
-  <gammagroup id="SelectionBg Inactive" value="0,0,0" gray="0" boost="0" /> 
-  <gammagroup id="Selection" value="0,0,0" gray="0" boost="0" /> 
-  <gammagroup id="LightningBolt" value="-619,-251,351" gray="0" boost="0" /> 
-  <gammagroup id="Column" value="-1154,-1154,-1121" gray="0" boost="0" /> 
-  <gammagroup id="ShadeButton" value="-619,-251,351" gray="0" boost="0" /> 
-  <gammagroup id="NotifierBackground" value="-619,-251,351" gray="0" boost="0" /> 
-  <gammagroup id="NotifierText" value="-4096,-4096,-4096" gray="0" boost="0" /> 
-  <gammagroup id="NotifierTextShadow" value="-151,-151,-151" gray="0" boost="1" /> 
-  <gammagroup id="NotifierUpperTextShadow" value="0,0,0" gray="0" boost="0" /> 
-  <gammagroup id="NotifierUpperText" value="0,0,0" gray="0" boost="0" /> 
-  <gammagroup id="Frame_Borders" value="829,-192,-804" gray="0" boost="0" /> 
-</gammaset> 
-
-<!-- Theme(s) by GreayStone -->
-
-<gammaset id="Purplelicious">
-  <gammagroup id="Titlebar" value="417,-4096,1118" gray="0" boost="0" />
-  <gammagroup id="TitlebarText" value="2225,-753,-2225" gray="0" boost="1" />
-  <gammagroup id="TitlebarMenuText" value="2225,-753,-2225" gray="0" boost="1" />
-  <gammagroup id="TitleButtonOrange" value="-953,-4096,-485" gray="0" boost="0" />
-  <gammagroup id="TitleButtonGrey" value="-1087,-2257,-1088" gray="0" boost="0" />
-  <gammagroup id="WindowBackground" value="752,-3461,1118" gray="0" boost="0" />
-  <gammagroup id="WindowText" value="2225,-753,-2225" gray="0" boost="0" />
-  <gammagroup id="Column Text" value="2225,-753,-2225" gray="0" boost="0" />
-  <gammagroup id="DisplayText" value="2225,-753,-2225" gray="2" boost="1" />
-  <gammagroup id="ScrollbarTrack" value="-2124,-4096,-2124" gray="0" boost="1" />
-  <gammagroup id="PlayerDisplay" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="PlayerDisplayGradient" value="-3528,-3495,-3528" gray="2" boost="1" />
-  <gammagroup id="ComponentFrame" value="819,-3896,1287" gray="2" boost="0" />
-  <gammagroup id="PlayerButton" value="-1221,-2926,-1221" gray="2" boost="0" />
-  <gammagroup id="PlayerShadeSlider" value="-1388,-2324,-1388" gray="2" boost="0" />
-  <gammagroup id="PlayerButtonPlaceHolder" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonGlow" value="-385,-2592,-385" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonActive" value="-385,-2592,-385" gray="0" boost="0" />
-  <gammagroup id="PlayerSliderLight" value="-1522,-3963,-1656" gray="2" boost="1" />
-  <gammagroup id="PlayerSliderBackground" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="WindowBackgroundGradient" value="669,-3788,1843" gray="0" boost="0" />
-  <gammagroup id="CompButtonInactive" value="-887,-1656,-887" gray="0" boost="0" />
-  <gammagroup id="CompButtonActive" value="-1388,-2324,-1388" gray="0" boost="0" />
-  <gammagroup id="CompButtonInactiveText" value="2225,-753,-2225" gray="2" boost="1" />
-  <gammagroup id="CompButtonActiveText" value="2225,-753,-2225" gray="2" boost="0" />
-  <gammagroup id="SelectionBg" value="819,-3788,1287" gray="2" boost="0" />
-  <gammagroup id="SelectionBg Inactive" value="-1087,-2893,-1154" gray="2" boost="0" />
-  <gammagroup id="Selection" value="2225,-753,-2225" gray="0" boost="0" />
-  <gammagroup id="LightningBolt" value="484,-452,-251" gray="0" boost="0" />
-  <gammagroup id="Column" value="819,-4096,1287" gray="2" boost="0" />
-  <gammagroup id="ShadeButton" value="-887,-2358,-887" gray="2" boost="1" />
-  <gammagroup id="NotifierBackground" value="-749,-4096,1118" gray="0" boost="0" />
-  <gammagroup id="NotifierText" value="2225,-753,-2225" gray="2" boost="0" />
-  <gammagroup id="NotifierTextShadow" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="NotifierUpperTextShadow" value="819,-1522,1287" gray="2" boost="0" />
-  <gammagroup id="NotifierUpperText" value="919,-1522,1287" gray="2" boost="0" />
-  <gammagroup id="Frame_Borders" value="829,-192,819" gray="0" boost="0" />
-</gammaset>
-
-<!-- Themes by DJ Egg -->
-
-<gammaset id="Lighten Up | Orange">
-  <gammagroup id="Titlebar" value="1630,-1328,-3812" gray="0" boost="1" />
-  <gammagroup id="TitlebarText" value="246,246,246" gray="0" boost="0" />
-  <gammagroup id="TitlebarMenuText" value="777,777,777" gray="0" boost="0" />
-  <gammagroup id="TitleButtonOrange" value="2161,701,-930" gray="0" boost="0" />
-  <gammagroup id="TitleButtonGrey" value="1042,1042,1042" gray="0" boost="0" />
-  <gammagroup id="WindowBackground" value="682,0,-569" gray="0" boost="1" />
+<gammaset id="groove_devil | Further">
+  <gammagroup id="Titlebar" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="TitlebarText" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="TitlebarMenuText" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="TitleButtonOrange" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="TitleButtonGrey" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="WindowBackground" value="-1827,-621,-1295" gray="2" boost="0" />
   <gammagroup id="WindowText" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Column Text" value="436,436,417" gray="0" boost="0" />
-  <gammagroup id="DisplayText" value="-626,-2598,-4096" gray="0" boost="0" />
-  <gammagroup id="ScrollbarTrack" value="1801,-1461,-3850" gray="0" boost="1" />
-  <gammagroup id="PlayerDisplay" value="4096,1668,-512" gray="0" boost="1" />
-  <gammagroup id="PlayerDisplayGradient" value="2104,-1499,-3983" gray="0" boost="1" />
-  <gammagroup id="ComponentFrame" value="701,-456,-1821" gray="0" boost="1" />
-  <gammagroup id="PlayerButton" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="Column Text" value="-727,514,2642" gray="0" boost="0" />
+  <gammagroup id="DisplayText" value="0,975,0" gray="0" boost="0" />
+  <gammagroup id="ScrollbarTrack" value="2180,0,0" gray="0" boost="0" />
+  <gammagroup id="PlayerDisplay" value="4096,-3174,0" gray="0" boost="0" />
+  <gammagroup id="PlayerDisplayGradient" value="0,1365,656" gray="0" boost="0" />
+  <gammagroup id="ComponentFrame" value="-515,-1224,0" gray="0" boost="0" />
+  <gammagroup id="PlayerButton" value="3741,2606,2677" gray="0" boost="0" />
   <gammagroup id="PlayerShadeSlider" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="PlayerButtonPlaceHolder" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="PlayerButtonGlow" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonActive" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerSliderLight" value="2996,-1328,-3148" gray="0" boost="1" />
-  <gammagroup id="PlayerSliderBackground" value="1498,-1783,-3547" gray="0" boost="1" />
+  <gammagroup id="PlayerButtonActive" value="407,585,2180" gray="0" boost="0" />
+  <gammagroup id="PlayerSliderLight" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="PlayerSliderBackground" value="3244,-3174,0" gray="0" boost="0" />
   <gammagroup id="WindowBackgroundGradient" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="CompButtonInactive" value="701,-456,-1821" gray="0" boost="1" />
-  <gammagroup id="CompButtonActive" value="1991,-1328,-3566" gray="0" boost="1" />
-  <gammagroup id="CompButtonInactiveText" value="227,227,227" gray="0" boost="0" />
-  <gammagroup id="CompButtonActiveText" value="417,417,417" gray="0" boost="0" />
-  <gammagroup id="SelectionBg" value="1232,0,-1290" gray="0" boost="1" />
-  <gammagroup id="SelectionBg Inactive" value="1877,682,-607" gray="0" boost="1" />
-  <gammagroup id="Selection" value="4096,-2124,-4096" gray="0" boost="1" />
+  <gammagroup id="CompButtonInactive" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="CompButtonActive" value="0,-2572,0" gray="0" boost="0" />
+  <gammagroup id="CompButtonInactiveText" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="CompButtonActiveText" value="159,0,0" gray="0" boost="0" />
+  <gammagroup id="SelectionBg" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="SelectionBg Inactive" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="Selection" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="LightningBolt" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Column" value="1630,-1271,-3319" gray="0" boost="1" />
-  <gammagroup id="ShadeButton" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="NotifierBackground" value="2730,-1518,-3717" gray="0" boost="1" />
-  <gammagroup id="NotifierText" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="NotifierTextShadow" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="NotifierUpperTextShadow" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="NotifierUpperText" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Frame_Borders" value="2597,-1271,-3509" gray="0" boost="1" />
-</gammaset>
-
-<gammaset id="Lighten Up | Green">
-  <gammagroup id="Titlebar" value="-3205,-949,-3641" gray="0" boost="1" />
-  <gammagroup id="TitlebarText" value="246,246,246" gray="0" boost="0" />
-  <gammagroup id="TitlebarMenuText" value="777,777,777" gray="0" boost="0" />
-  <gammagroup id="TitleButtonOrange" value="1251,-342,-1252" gray="0" boost="0" />
-  <gammagroup id="TitleButtonGrey" value="1042,2048,1042" gray="0" boost="0" />
-  <gammagroup id="WindowBackground" value="-550,0,-930" gray="0" boost="1" />
-  <gammagroup id="WindowText" value="3015,3811,3015" gray="0" boost="0" />
-  <gammagroup id="Column Text" value="455,455,455" gray="0" boost="0" />
-  <gammagroup id="DisplayText" value="-3376,-2276,-4096" gray="0" boost="0" />
-  <gammagroup id="ScrollbarTrack" value="-3395,-1385,-3736" gray="0" boost="1" />
-  <gammagroup id="PlayerDisplay" value="986,3147,-209" gray="0" boost="1" />
-  <gammagroup id="PlayerDisplayGradient" value="-3110,0,-3566" gray="0" boost="1" />
-  <gammagroup id="ComponentFrame" value="-1593,-456,-1821" gray="0" boost="1" />
-  <gammagroup id="PlayerButton" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerShadeSlider" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonPlaceHolder" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonGlow" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonActive" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerSliderLight" value="-1916,1744,-3148" gray="0" boost="1" />
-  <gammagroup id="PlayerSliderBackground" value="-2997,-1385,-3547" gray="0" boost="1" />
-  <gammagroup id="WindowBackgroundGradient" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="CompButtonInactive" value="-1480,-456,-1821" gray="0" boost="1" />
-  <gammagroup id="CompButtonActive" value="-3224,-645,-3736" gray="0" boost="1" />
-  <gammagroup id="CompButtonInactiveText" value="227,227,227" gray="0" boost="0" />
-  <gammagroup id="CompButtonActiveText" value="417,417,417" gray="0" boost="0" />
-  <gammagroup id="SelectionBg" value="-2371,796,-2940" gray="0" boost="1" />
-  <gammagroup id="SelectionBg Inactive" value="-190,1099,-873" gray="0" boost="1" />
-  <gammagroup id="Selection" value="-3755,-1555,-3945" gray="0" boost="1" />
-  <gammagroup id="LightningBolt" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Column" value="-2940,-550,-3224" gray="0" boost="1" />
-  <gammagroup id="ShadeButton" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="NotifierBackground" value="-3186,-1138,-3717" gray="0" boost="1" />
-  <gammagroup id="NotifierText" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="NotifierTextShadow" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="NotifierUpperTextShadow" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="NotifierUpperText" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Frame_Borders" value="-3622,-835,-3509" gray="0" boost="1" />
-</gammaset>
-
-<gammaset id="Lighten Up | Blue">
-  <gammagroup id="Titlebar" value="-3433,-1328,1061" gray="0" boost="1" />
-  <gammagroup id="TitlebarText" value="246,246,246" gray="0" boost="0" />
-  <gammagroup id="TitlebarMenuText" value="777,777,777" gray="0" boost="0" />
-  <gammagroup id="TitleButtonOrange" value="1251,-342,-1252" gray="0" boost="0" />
-  <gammagroup id="TitleButtonGrey" value="1042,2048,1042" gray="0" boost="0" />
-  <gammagroup id="WindowBackground" value="-892,0,625" gray="0" boost="1" />
-  <gammagroup id="WindowText" value="3015,2560,3356" gray="0" boost="0" />
-  <gammagroup id="Column Text" value="455,455,455" gray="0" boost="0" />
-  <gammagroup id="DisplayText" value="-3603,-3016,-1480" gray="0" boost="0" />
-  <gammagroup id="ScrollbarTrack" value="-3528,-2048,-418" gray="0" boost="1" />
-  <gammagroup id="PlayerDisplay" value="1137,2616,3849" gray="0" boost="1" />
-  <gammagroup id="PlayerDisplayGradient" value="-3452,-1290,1024" gray="0" boost="1" />
-  <gammagroup id="ComponentFrame" value="-1859,-456,853" gray="0" boost="1" />
-  <gammagroup id="PlayerButton" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerShadeSlider" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonPlaceHolder" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonGlow" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonActive" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerSliderLight" value="-1916,265,2066" gray="0" boost="1" />
-  <gammagroup id="PlayerSliderBackground" value="-2997,-2030,-911" gray="0" boost="1" />
-  <gammagroup id="WindowBackgroundGradient" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="CompButtonInactive" value="-1859,-456,853" gray="0" boost="1" />
-  <gammagroup id="CompButtonActive" value="-3414,-1366,1232" gray="0" boost="1" />
-  <gammagroup id="CompButtonInactiveText" value="227,227,227" gray="0" boost="0" />
-  <gammagroup id="CompButtonActiveText" value="417,417,417" gray="0" boost="0" />
-  <gammagroup id="SelectionBg" value="-2693,-247,2085" gray="0" boost="1" />
-  <gammagroup id="SelectionBg Inactive" value="-475,663,1858" gray="0" boost="1" />
-  <gammagroup id="Selection" value="-3755,-2466,-873" gray="0" boost="1" />
-  <gammagroup id="LightningBolt" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Column" value="-3072,-1081,1384" gray="0" boost="1" />
-  <gammagroup id="ShadeButton" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="NotifierBackground" value="-3186,-1783,0" gray="0" boost="1" />
-  <gammagroup id="NotifierText" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="NotifierTextShadow" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="NotifierUpperTextShadow" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="NotifierUpperText" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Frame_Borders" value="-3622,-2333,-835" gray="0" boost="1" />
-</gammaset>
-
-<gammaset id="Lighten Up | Mono Light">
-  <gammagroup id="Titlebar" value="-2447,-2447,-2447" gray="0" boost="1" />
-  <gammagroup id="TitlebarText" value="246,246,246" gray="0" boost="0" />
-  <gammagroup id="TitlebarMenuText" value="777,777,777" gray="0" boost="0" />
-  <gammagroup id="TitleButtonOrange" value="1251,-342,-1252" gray="0" boost="0" />
-  <gammagroup id="TitleButtonGrey" value="1042,2048,1042" gray="0" boost="0" />
-  <gammagroup id="WindowBackground" value="0,0,0" gray="0" boost="1" />
-  <gammagroup id="WindowText" value="-3926,-3926,-3926" gray="0" boost="0" />
-  <gammagroup id="Column Text" value="455,455,455" gray="0" boost="0" />
-  <gammagroup id="DisplayText" value="-3888,-3888,-3888" gray="0" boost="0" />
-  <gammagroup id="ScrollbarTrack" value="-2048,-2048,-2048" gray="0" boost="1" />
-  <gammagroup id="PlayerDisplay" value="3337,3337,3337" gray="0" boost="1" />
-  <gammagroup id="PlayerDisplayGradient" value="-1555,-1555,-1555" gray="0" boost="1" />
-  <gammagroup id="ComponentFrame" value="-456,-456,-456" gray="0" boost="1" />
-  <gammagroup id="PlayerButton" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerShadeSlider" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonPlaceHolder" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonGlow" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonActive" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerSliderLight" value="1953,1953,1953" gray="0" boost="1" />
-  <gammagroup id="PlayerSliderBackground" value="-3262,-3262,-3262" gray="0" boost="1" />
-  <gammagroup id="WindowBackgroundGradient" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="CompButtonInactive" value="-456,-456,-456" gray="0" boost="1" />
-  <gammagroup id="CompButtonActive" value="-2542,-2542,-2542" gray="0" boost="1" />
-  <gammagroup id="CompButtonInactiveText" value="227,227,227" gray="0" boost="0" />
-  <gammagroup id="CompButtonActiveText" value="417,417,417" gray="0" boost="0" />
-  <gammagroup id="SelectionBg" value="-911,-911,-911" gray="0" boost="1" />
-  <gammagroup id="SelectionBg Inactive" value="0,0,0" gray="0" boost="1" />
-  <gammagroup id="Selection" value="-911,-911,-911" gray="0" boost="1" />
-  <gammagroup id="LightningBolt" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Column" value="-2200,-2200,-2200" gray="0" boost="1" />
+  <gammagroup id="Column" value="0,-2075,0" gray="0" boost="0" />
   <gammagroup id="ShadeButton" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="NotifierBackground" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="NotifierText" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="NotifierTextShadow" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="NotifierUpperTextShadow" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="NotifierUpperText" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Frame_Borders" value="3773,3773,3773" gray="0" boost="1" />
+  <gammagroup id="Frame_Borders" value="0,0,0" gray="0" boost="0" />
 </gammaset>
 
-<gammaset id="Orange Burst">
-  <gammagroup id="Titlebar" value="2560,1991,1384" gray="0" boost="0" />
-  <gammagroup id="TitlebarText" value="0,0,0" gray="0" boost="1" />
-  <gammagroup id="TitlebarMenuText" value="0,0,0" gray="0" boost="1" />
-  <gammagroup id="TitleButtonOrange" value="1536,982,417" gray="0" boost="0" />
-  <gammagroup id="TitleButtonGrey" value="854,982,1135" gray="0" boost="0" />
-  <gammagroup id="WindowBackground" value="625,132,-342" gray="0" boost="1" />
-  <gammagroup id="WindowText" value="512,512,512" gray="0" boost="0" />
-  <gammagroup id="Column Text" value="303,303,303" gray="0" boost="0" />
-  <gammagroup id="DisplayText" value="872,872,872" gray="0" boost="0" />
-  <gammagroup id="ScrollbarTrack" value="1365,-2086,-3793" gray="0" boost="1" />
-  <gammagroup id="PlayerDisplay" value="3318,-607,-4096" gray="0" boost="1" />
-  <gammagroup id="PlayerDisplayGradient" value="1365,-1992,-4040" gray="0" boost="1" />
-  <gammagroup id="ComponentFrame" value="815,189,-437" gray="0" boost="1" />
-  <gammagroup id="PlayerButton" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerShadeSlider" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonPlaceHolder" value="3687,3687,3687" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonGlow" value="854,982,1135" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonActive" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerSliderLight" value="3015,-1593,-3812" gray="0" boost="1" />
-  <gammagroup id="PlayerSliderBackground" value="1441,-2086,-3793" gray="0" boost="1" />
-  <gammagroup id="WindowBackgroundGradient" value="-1933,-1330,-727" gray="0" boost="1" />
-  <gammagroup id="CompButtonInactive" value="1061,-1764,-3888" gray="0" boost="1" />
-  <gammagroup id="CompButtonActive" value="1744,-1897,-3641" gray="0" boost="1" />
-  <gammagroup id="CompButtonInactiveText" value="-247,-247,-247" gray="0" boost="0" />
-  <gammagroup id="CompButtonActiveText" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="SelectionBg" value="0,-494,-1024" gray="0" boost="1" />
-  <gammagroup id="SelectionBg Inactive" value="455,0,-418" gray="0" boost="1" />
-  <gammagroup id="Selection" value="1194,246,-759" gray="0" boost="0" />
+<gammaset id="groove_devil | blond">
+  <gammagroup id="Titlebar" value="-2465,0,0" gray="0" boost="0" />
+  <gammagroup id="TitlebarText" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="TitlebarMenuText" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="TitleButtonOrange" value="230,0,372" gray="0" boost="0" />
+  <gammagroup id="TitleButtonGrey" value="691,3493,0" gray="0" boost="0" />
+  <gammagroup id="WindowBackground" value="-2323,-4096,-3174" gray="2" boost="0" />
+  <gammagroup id="WindowText" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="Column Text" value="1897,2712,2642" gray="0" boost="0" />
+  <gammagroup id="DisplayText" value="1294,1365,2571" gray="0" boost="0" />
+  <gammagroup id="ScrollbarTrack" value="1968,0,0" gray="0" boost="0" />
+  <gammagroup id="PlayerDisplay" value="2039,4096,-266" gray="0" boost="0" />
+  <gammagroup id="PlayerDisplayGradient" value="-2242,-1771,-1037" gray="2" boost="1" />
+  <gammagroup id="ComponentFrame" value="-515,-3104,-4096" gray="0" boost="0" />
+  <gammagroup id="PlayerButton" value="3528,3741,-2501" gray="0" boost="0" />
+  <gammagroup id="PlayerShadeSlider" value="0,0,0" gray="2" boost="0" />
+  <gammagroup id="PlayerButtonPlaceHolder" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="PlayerButtonGlow" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="PlayerButtonActive" value="549,585,691" gray="0" boost="0" />
+  <gammagroup id="PlayerSliderLight" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="PlayerSliderBackground" value="0,159,159" gray="0" boost="0" />
+  <gammagroup id="WindowBackgroundGradient" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="CompButtonInactive" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="CompButtonActive" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="CompButtonInactiveText" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="CompButtonActiveText" value="159,0,0" gray="0" boost="0" />
+  <gammagroup id="SelectionBg" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="SelectionBg Inactive" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="Selection" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="LightningBolt" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Column" value="0,-399,-892" gray="0" boost="1" />
+  <gammagroup id="Column" value="2145,-3033,-2536" gray="0" boost="0" />
   <gammagroup id="ShadeButton" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="NotifierBackground" value="2825,-1631,-3869" gray="2" boost="1" />
+  <gammagroup id="NotifierBackground" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="NotifierText" value="-1791,0,0" gray="0" boost="0" />
+  <gammagroup id="NotifierTextShadow" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="NotifierUpperTextShadow" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="NotifierUpperText" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="Frame_Borders" value="0,0,0" gray="0" boost="0" />
+</gammaset>
+
+<!-- Themes by music_junkie -->
+
+<gammaset id="music_junkie | Twilight Glow">
+  <gammagroup id="Titlebar" value="-700,-1768,-373" gray="1" boost="0" />
+  <gammagroup id="TitlebarText" value="204,2340,-1170" gray="1" boost="1" />
+  <gammagroup id="TitlebarMenuText" value="28,6894,-1500" gray="0" boost="1" />
+  <gammagroup id="TitleButtonOrange" value="-864,-2584,-585" gray="1" boost="0" />
+  <gammagroup id="TitleButtonGrey" value="-770,-2335,-262" gray="1" boost="0" />
+  <gammagroup id="WindowBackground" value="-1699,-3383,-3725" gray="1" boost="0" />
+  <gammagroup id="WindowText" value="-500,-157,-1042" gray="1" boost="1" />
+  <gammagroup id="Column Text" value="-440,-1245,-832" gray="1" boost="0" />
+  <gammagroup id="DisplayText" value="352,-1050,506" gray="1" boost="1" />
+  <gammagroup id="ScrollbarTrack" value="-2850,-3221,-2688" gray="1" boost="1" />
+  <gammagroup id="PlayerDisplay" value="1274,369,-502" gray="2" boost="0" />
+  <gammagroup id="PlayerDisplayGradient" value="-1523,-1018,-1451" gray="0" boost="1" />
+  <gammagroup id="ComponentFrame" value="1611,-785,819" gray="1" boost="0" />
+  <gammagroup id="PlayerButton" value="-576,-1966,-575" gray="1" boost="0" />
+  <gammagroup id="PlayerShadeSlider" value="-1413,2440,0" gray="0" boost="1" />
+  <gammagroup id="PlayerButtonPlaceHolder" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="PlayerButtonGlow" value="-2348,-4096,-44" gray="1" boost="1" />
+  <gammagroup id="PlayerButtonActive" value="0,0,0" gray="0" boost="1" />
+  <gammagroup id="PlayerSliderLight" value="1387,6152,-16" gray="1" boost="1" />
+  <gammagroup id="PlayerSliderBackground" value="-856,-1934,-379" gray="1" boost="0" />
+  <gammagroup id="WindowBackgroundGradient" value="0,0,0" gray="0" boost="1" />
+  <gammagroup id="CompButtonInactive" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="CompButtonActive" value="870,-1242,1070" gray="0" boost="0" />
+  <gammagroup id="CompButtonInactiveText" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="CompButtonActiveText" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="SelectionBg" value="-2072,-4096,-1128" gray="2" boost="1" />
+  <gammagroup id="SelectionBg Inactive" value="0,0,0" gray="1" boost="0" />
+  <gammagroup id="Selection" value="-42,6952,-1616" gray="0" boost="1" />
+  <gammagroup id="LightningBolt" value="-819,1384,-3982" gray="0" boost="0" />
+  <gammagroup id="Column" value="-878,-1210,96" gray="0" boost="0" />
+  <gammagroup id="ShadeButton" value="0,0,0" gray="0" boost="0" />
+  <gammagroup id="NotifierBackground" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="NotifierText" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="NotifierTextShadow" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="NotifierUpperTextShadow" value="0,0,0" gray="0" boost="0" />
   <gammagroup id="NotifierUpperText" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Frame_Borders" value="2560,-2143,-3622" gray="0" boost="1" />
+  <gammagroup id="Frame_Borders" value="-891,1298,-1242" gray="2" boost="1" />
 </gammaset>
 
-<gammaset id="XP Noir">
-  <gammagroup id="Titlebar" value="-2902,-2674,-2428" gray="0" boost="1" />
-  <gammagroup id="TitlebarText" value="246,246,246" gray="0" boost="0" />
-  <gammagroup id="TitlebarMenuText" value="777,777,777" gray="0" boost="0" />
-  <gammagroup id="TitleButtonOrange" value="1251,-342,-1252" gray="0" boost="0" />
-  <gammagroup id="TitleButtonGrey" value="967,1194,1422" gray="0" boost="0" />
-  <gammagroup id="WindowBackground" value="-1745,-1650,-1328" gray="0" boost="1" />
-  <gammagroup id="WindowText" value="-209,0,208" gray="0" boost="1" />
-  <gammagroup id="Column Text" value="455,455,455" gray="0" boost="0" />
-  <gammagroup id="DisplayText" value="2275,2275,2275" gray="0" boost="0" />
-  <gammagroup id="ScrollbarTrack" value="-3205,-2921,-2636" gray="0" boost="1" />
-  <gammagroup id="PlayerDisplay" value="-2504,-2238,-1783" gray="0" boost="1" />
-  <gammagroup id="PlayerDisplayGradient" value="2066,2313,2578" gray="0" boost="0" />
-  <gammagroup id="ComponentFrame" value="-1309,-1214,-873" gray="0" boost="1" />
-  <gammagroup id="PlayerButton" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerShadeSlider" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonPlaceHolder" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonGlow" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonActive" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerSliderLight" value="170,398,625" gray="0" boost="1" />
-  <gammagroup id="PlayerSliderBackground" value="-3262,-3091,-2864" gray="0" boost="1" />
-  <gammagroup id="WindowBackgroundGradient" value="493,587,948" gray="0" boost="0" />
-  <gammagroup id="CompButtonInactive" value="-1252,-1138,-835" gray="0" boost="1" />
-  <gammagroup id="CompButtonActive" value="-1897,-1764,-1404" gray="0" boost="1" />
-  <gammagroup id="CompButtonInactiveText" value="227,227,227" gray="0" boost="0" />
-  <gammagroup id="CompButtonActiveText" value="417,417,417" gray="0" boost="0" />
-  <gammagroup id="SelectionBg" value="-1157,-854,-569" gray="0" boost="1" />
-  <gammagroup id="SelectionBg Inactive" value="-1555,-1252,-892" gray="0" boost="1" />
-  <gammagroup id="Selection" value="-854,-854,-854" gray="0" boost="1" />
-  <gammagroup id="LightningBolt" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Column" value="-2276,-2048,-1802" gray="0" boost="1" />
-  <gammagroup id="ShadeButton" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="NotifierBackground" value="-2579,-2276,-1802" gray="0" boost="1" />
-  <gammagroup id="NotifierText" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="NotifierTextShadow" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="NotifierUpperTextShadow" value="-1536,-1536,-1536" gray="0" boost="0" />
-  <gammagroup id="NotifierUpperText" value="-1536,-1536,-1536" gray="0" boost="0" />
-  <gammagroup id="Frame_Borders" value="-3755,-3471,-3205" gray="0" boost="1" />
-</gammaset>
-
-<gammaset id="Rel@m | Pure Dark">
-  <gammagroup id="Titlebar" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="TitlebarText" value="1365,1294,1294" gray="0" boost="0" />
-  <gammagroup id="TitlebarMenuText" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="TitleButtonOrange" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="TitleButtonGrey" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="WindowBackground" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="WindowText" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="Column Text" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="DisplayText" value="4096,4096,4096" gray="1" boost="0" />
-  <gammagroup id="ScrollbarTrack" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerDisplay" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerDisplayGradient" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="ComponentFrame" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="PlayerButton" value="2677,3883,3847" gray="0" boost="0" />
-  <gammagroup id="PlayerShadeSlider" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonPlaceHolder" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonGlow" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="PlayerButtonActive" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="PlayerSliderLight" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="PlayerSliderBackground" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="WindowBackgroundGradient" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="CompButtonInactive" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="CompButtonActive" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="CompButtonInactiveText" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="CompButtonActiveText" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="SelectionBg" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="SelectionBg Inactive" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="Selection" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="LightningBolt" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="Column" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="ShadeButton" value="0,0,0" gray="0" boost="0" />
-  <gammagroup id="NotifierBackground" value="-4096,-4096,-4096" gray="0" boost="0" />
-  <gammagroup id="NotifierText" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="NotifierTextShadow" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="NotifierUpperTextShadow" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="NotifierUpperText" value="4096,4096,4096" gray="0" boost="0" />
-  <gammagroup id="Frame_Borders" value="-4096,-4096,-4096" gray="0" boost="0" />
-</gammaset>
+<!--End Section-->
