@@ -1,9 +1,9 @@
 ![size](https://img.shields.io/github/repo-size/SecurityRaven/Winamp-BigBentoREDUX?style=flat-square)
 ![tweet](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FSecurityRaven%2FWinamp-BigBentoREDUX)
 <br>
-Latest Version: 1.2.8 ([Changelog](https://github.com/SecurityRaven/Winamp-BigBentoUP/blob/changelogs/1.2.8.txt))
+Latest Version: 1.2.9 ([Changelog](https://github.com/SecurityRaven/Winamp-BigBentoUP/blob/changelogs/1.2.9.txt))
 <br>
-News: It is back! New features are coming...
+News: 1.2.9 is released after 1 month of development!
 # Winamp Big Bento Redux
 This repository keeps alive the famous skin of Winamp 5, Big Bento by updating some components and resolving some bugs that were present and not resolved.
 <br>![img](screenshot.png)
