@@ -1,0 +1,23 @@
+-------------------Big Bento - Redux -------------------
+			 (1.2.9 - Preview)
+			Built @ 10/5/2022 - 22:09
+- Removed the 3rd-party timer
+- Extended support on older Winamp versions (2009 and later)
+- Visualization is a bit upscaled (thanks RaduF28)
+- Fixed the broken browser elements and links
+- About box. Just right-click on the Album Art ;)
+- Fixed simplemaximize bug
+- Updated the "CoverPlaying" modification [Version: 1.121]
+- Fixed the album art not found glitch on the mcv
+- Fixed a beatvis glitch with album art (thanks RaduF28 for the report)
+- Added Winamp/Winamp PRO branding support
+- Restored Online Services!
+- Fixed the Media Monitor!
+- Improved: Better Memory Management (reduces 0.5%)
+- New: XML Object Checker
+- Added: Handling on the Artist/Title info search
+- New: Version Checking script
+- Fixed: Branding Bugs
+- Fixed: The cycler is overlaying with another!
+- Better client handling
+- More Big Bento-ish
