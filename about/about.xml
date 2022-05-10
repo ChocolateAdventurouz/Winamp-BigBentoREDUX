@@ -58,7 +58,7 @@
 
 <groupdef id="about.text5" >
 	<text color="about.font" x="0" y="0" h="30" w="350" fontsize="28" font="tahoma" text="Unofficial Maintainer" alpha="110"/>
-	<text color="about.font" x="15" y="30" h="40" w="350" fontsize="36" font="tahoma" text="Rel@m aka SecurityRaven" alpha="60"/>
+	<text color="about.font" x="15" y="30" h="40" w="350" fontsize="36" font="tahoma" text="Rel@m aka ChocolateAdventurouz" alpha="60"/>
 </groupdef>
 <groupdef id="about.text7" >
 	<text color="about.font" x="0" y="0" h="30" w="350" fontsize="28" font="tahoma" text="Color Themes by" alpha="110"/>
