@@ -5,7 +5,7 @@
 		<version>1.2.8</version>
 		<name>Big Bento</name>
 		<author>Martin Pöhlmann, Taber Buhl, Rel@m</author>
-		<comment>Graphics by Taber Buhl - Wasabi Development by Ben Allison and Martin Poehlmann. Unofficial Maintence (2022) by Rel@m aka SecurityRaven</comment>
+		<comment>Graphics by Taber Buhl - Wasabi Development by Ben Allison and Martin Poehlmann. Unofficial Maintence (2022) by Rel@m aka ChocolateAdventurouz</comment>
 		<email>martin@skinconsortium.com</email>
 		<screenshot>screenshot.png</screenshot>
 		<homepage>http://www.skinconsortium.com/</homepage>
@@ -38,7 +38,6 @@
 
 	<scripts>
 		<script file="scripts/maximize.maki" param="166,23"/>
-		<script file="scripts/newtimer.maki"/>
 	</scripts>
 
 </WinampAbstractionLayer>
